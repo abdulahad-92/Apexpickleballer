@@ -1,0 +1,127 @@
+.gallerySection {
+  position: relative;
+  overflow: hidden;
+}
+
+.contentOverlay {
+  position: relative;
+  z-index: 10;
+}
+
+.animationBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  width: 100%;
+}
+
+.titleText {
+  max-width: 750px;
+  margin: 0;
+  text-align: center;
+}
+
+.titleBallLeft,
+.titleBallRight {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Authentic Glowing Pickleball Visual */
+.pickleball {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f6ff47 25%, #d4f200 70%, #9cb800 100%);
+  box-shadow: 0 0 30px rgba(223, 255, 0, 0.45), 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.pickleballLarge {
+  width: 86px;
+  height: 86px;
+  box-shadow: 0 0 38px rgba(223, 255, 0, 0.5), 0 14px 30px rgba(0, 0, 0, 0.6);
+}
+
+.holes {
+  position: absolute;
+  inset: 0;
+}
+
+.hole {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(50, 70, 0, 0.85);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.pickleballLarge .hole {
+  width: 11px;
+  height: 11px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.item:hover .img {
+  transform: scale(1.07);
+}
+
+.transparent {
+  background: transparent !important;
+}
+
+@media (max-width: 1024px) {
+  .titleBallLeft,
+  .titleBallRight {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

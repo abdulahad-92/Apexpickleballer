@@ -1,0 +1,377 @@
+.container {
+  min-height: 100vh;
+  background: #090d14;
+  color: #f1f5f9;
+  font-family: var(--font-body, system-ui, sans-serif);
+  padding-bottom: 120px;
+}
+
+.containerLight {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  padding-bottom: 0 !important;
+}
+
+/* Control Hub & Header */
+.dashboardNav {
+  position: sticky;
+  top: 72px; /* right below main header */
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 24px;
+}
+
+.navInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brandBadge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandBadge span {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--clr-yellow);
+}
+
+.pillTag {
+  background: rgba(255, 213, 79, 0.12);
+  color: var(--clr-yellow);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 213, 79, 0.3);
+}
+
+.tabList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tabBtn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tabBtnActive {
+  background: var(--clr-yellow) !important;
+  color: #121212 !important;
+  font-weight: 800;
+  border-color: var(--clr-yellow) !important;
+  box-shadow: 0 0 16px rgba(255, 213, 79, 0.35);
+}
+
+/* Tab Content Panel */
+.tabPanel {
+  max-width: 1400px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+}
+
+.panelHeader {
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.7) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.panelTitle {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.panelSub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.subControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.subControlBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subControlBtnActive {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Testing Card Wrappers */
+.testCard {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cardTopBar {
+  background: rgba(30, 41, 59, 0.7);
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.statusIndicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+}
+
+.previewContainer {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video Showcase Grid */
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.videoCardWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.videoMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.videoMeta h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.videoMeta p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Theme Switcher Demo */
+.themeDemoWrap {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: all 0.4s ease;
+}
+
+.themeGold {
+  --theme-accent: #ffd54f;
+  --theme-accent-soft: rgba(255, 213, 79, 0.15);
+  --theme-bg: #0d131f;
+  --theme-card: #131c2d;
+  --theme-border: rgba(255, 213, 79, 0.3);
+  --theme-glow: rgba(255, 213, 79, 0.35);
+}
+
+.themeRose {
+  --theme-accent: #e91e8c;
+  --theme-accent-soft: rgba(233, 30, 140, 0.15);
+  --theme-bg: #190c17;
+  --theme-card: #261122;
+  --theme-border: rgba(233, 30, 140, 0.4);
+  --theme-glow: rgba(233, 30, 140, 0.4);
+}
+
+.themeCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.themedCampCard {
+  background: var(--theme-card);
+  border: 1px solid var(--theme-border);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3), 0 0 20px var(--theme-glow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.themedBadge {
+  align-self: flex-start;
+  background: var(--theme-accent-soft);
+  color: var(--theme-accent);
+  border: 1px solid var(--theme-border);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.themedBtn {
+  margin-top: auto;
+  background: var(--theme-accent);
+  color: #121212;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.themedBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--theme-glow);
+}
+
+/* ========================================================= */
+/* Integrated Section Animation Testing Styles               */
+/* ========================================================= */
+.sectionWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 48px;
+  background: #080c14;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+.sectionWrapper :global([data-reveal]) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.sectionLabel {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  z-index: 50;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--clr-yellow);
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 213, 79, 0.4);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+.contentOverlay {
+  position: relative;
+  z-index: 20;
+}
+
+.animationForeground {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.animationBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}

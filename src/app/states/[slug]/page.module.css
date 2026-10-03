@@ -1,0 +1,253 @@
+.stateHero {
+  padding: 80px 0 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroContainer {
+  max-width: 800px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--clr-volt-bright);
+}
+
+.heroSub {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.campsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--clr-border);
+  padding-bottom: 16px;
+}
+
+.campsHeader h2 {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.campsHeader p {
+  color: var(--clr-text-secondary);
+  font-weight: 500;
+}
+
+.campGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.campCard {
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.campCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(17, 24, 19, 0.08);
+  border-color: rgba(110, 148, 0, 0.45);
+}
+
+.campHeader {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  border-bottom: 1px solid var(--clr-border);
+  background: var(--clr-bg-light);
+}
+
+.dateWrap {
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  text-align: center;
+}
+
+.month {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-volt);
+}
+
+.day {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+  line-height: 1;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerInfo h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.headerInfo p {
+  font-size: 13px;
+  color: var(--clr-text-secondary);
+  font-weight: 500;
+}
+
+.campBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.venue, .time {
+  font-size: 14px;
+  color: var(--clr-text-secondary);
+}
+
+.venue strong, .time strong {
+  color: var(--clr-text-primary);
+}
+
+.seats {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.urgentSeats {
+  display: inline-block;
+  background: rgba(110, 148, 0, 0.12);
+  color: #4b6600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.goodSeats {
+  display: inline-block;
+  background: rgba(42, 157, 143, 0.1);
+  color: #2a9d8f;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.campFooter {
+  padding: 0 24px 24px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--clr-bg-white);
+  border: 1px dashed var(--clr-border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+}
+
+.emptyState h3 {
+  font-size: 24px;
+}
+
+.emptyState p {
+  color: var(--clr-text-secondary);
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.ctaSection {
+  background: #111813;
+  padding: 80px 0;
+  text-align: center;
+  color: var(--clr-bg-white);
+  border-top: 1px solid rgba(226, 249, 82, 0.2);
+}
+
+.ctaSection h2 {
+  color: var(--clr-bg-white);
+  margin-bottom: 16px;
+}
+
+.ctaSection p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.subscribeForm input {
+  flex: 1;
+}
+
+@media (max-width: 1023px) {
+  .campGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .campsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .campGrid {
+    grid-template-columns: 1fr;
+  }
+  .subscribeForm {
+    flex-direction: column;
+  }
+}

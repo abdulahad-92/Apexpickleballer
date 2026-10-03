@@ -1,0 +1,92 @@
+[
+  {
+    "category": "General",
+    "questions": [
+      {
+        "id": "what-is-a-clinic",
+        "q": "What is an Apex Pickleballers clinic?",
+        "a": "An Apex Pickleballers clinic is a focused 4-hour coached pickleball session in Toronto: eight players, two courts, and one coach. A clinic combines structured instruction, deliberate practice drills, and guided match play. We ensure every player understands what they're working on, why it matters, and how to keep improving after the session."
+      },
+      {
+        "id": "group-size",
+        "q": "What is the player-to-coach ratio?",
+        "a": "We maintain a strict 8:1 coaching ratio: exactly eight players across two courts (four players per court), with Coach Cris working continuously across both courts. This guarantees real-time feedback and on-the-spot technical adjustments for every participant."
+      },
+      {
+        "id": "who-is-this-for",
+        "q": "Who are these clinics designed for?",
+        "a": "Our flagship Toronto clinic is focused on adults aged 40 and above who know the basics and want to build consistency and confidence during games without intimidation. We welcome all enthusiastic adults who want to play with purpose and meet fellow players."
+      },
+      {
+        "id": "skill-level",
+        "q": "What skill level is required?",
+        "a": "Ideal for players who know the basics and want to build consistency and confidence. No official rating or tournament pedigree is required. As long as you know how to hit a serve and keep score, you will feel completely supported."
+      },
+      {
+        "id": "breaks",
+        "q": "Are there scheduled breaks during the 4 hours?",
+        "a": "Yes! Each drill block is punctuated by 1-minute water breaks, with time built in to rest, hydrate, and chat with fellow players. The pace is active, enjoyable, and physically manageable."
+      }
+    ]
+  },
+  {
+    "category": "Registration & Details",
+    "questions": [
+      {
+        "id": "how-to-register",
+        "q": "How do I reserve my spot?",
+        "a": "Click 'Reserve Your Spot' on any clinic page, select your ticket, tell us a bit about your playing experience, and complete checkout. Registrations close automatically as soon as 8 spots are filled."
+      },
+      {
+        "id": "pricing-currency",
+        "q": "What is the clinic fee and currency?",
+        "a": "All pricing is in Canadian Dollars (CAD) as clearly shown on the registration page ($195 CAD for the 4-hour coached clinic). This includes all 4 hours of instruction, equipment targets, and your personalized coaching notes."
+      },
+      {
+        "id": "contact-coach",
+        "q": "Can I speak with Coach Cris before booking?",
+        "a": "Absolutely! Coach Cris is happy to answer any questions about the curriculum or skill match. You can reach him directly at +1 (587) 500-2973 or by emailing hello@apexpickleballers.com."
+      },
+      {
+        "id": "experience-question",
+        "q": "Why do you ask about playing experience during registration?",
+        "a": "Coach Cris reviews each player's background prior to clinic day so he can tailor drill pairings and prepare individualized notes for your doubles tournament review."
+      }
+    ]
+  },
+  {
+    "category": "Clinic Day & Equipment",
+    "questions": [
+      {
+        "id": "what-to-bring",
+        "q": "What equipment should I bring?",
+        "a": "Please bring your pickleball paddle, non-marking athletic or court/tennis shoes, comfortable athletic clothing, and a water bottle (at least 32oz). Tournament-grade pickleballs, targets, and training cones are fully provided."
+      },
+      {
+        "id": "parking-venue",
+        "q": "Where in Toronto is the clinic held and is there parking?",
+        "a": "Clinics are hosted at a dedicated indoor racquet facility in the Greater Toronto Area featuring championship pickleball courts and ample free on-site parking. Exact facility directions and entry codes are emailed upon reservation."
+      },
+      {
+        "id": "arrive-time",
+        "q": "How early should I arrive?",
+        "a": "Please arrive 10-15 minutes before the start time for registration check-in, meeting Coach Cris, and getting settled before the group warm-up."
+      }
+    ]
+  },
+  {
+    "category": "Cancellations & Guarantee",
+    "questions": [
+      {
+        "id": "cancellation-policy",
+        "q": "What is the cancellation and refund policy?",
+        "a": "Because each clinic is capped at only 8 players, each reserved spot represents significant coach time. Cancellations made 7 or more days prior to clinic day receive a 100% full refund or free transfer to a future clinic date."
+      },
+      {
+        "id": "satisfaction-guarantee",
+        "q": "What is your satisfaction guarantee?",
+        "a": "We stand for quality coaching, encouragement, and connection. If you participate fully and don't feel more confident and clearer on how to improve after the 4 hours, let Coach Cris know and we will make it right."
+      }
+    ]
+  }
+]

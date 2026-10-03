@@ -1,0 +1,566 @@
+{
+  "_instructions": "This is the SINGLE SOURCE OF TRUTH for all site content. Apex Pickleballers — Play with purpose. Improve together.",
+
+  "brand": {
+    "name": "Apex",
+    "tagline": "Pickleballers",
+    "fullName": "Apex Pickleballers",
+    "slogan": "Play with purpose. Improve together.",
+    "emoji": "🏓",
+    "description": "Pickleball brings people onto the court. Progress keeps them coming back. We created Apex Pickleballers to help players turn their enthusiasm into improvement through focused coaching, meaningful practice, and a supportive community.",
+    "story": {
+      "headline": "Play with purpose. Improve together.",
+      "p1": "Pickleball brings people onto the court. Progress keeps them coming back.",
+      "p2": "We created Apex Pickleballers to help players turn their enthusiasm into improvement through focused coaching, meaningful practice, and a supportive community.",
+      "p3": "Our clinics bring players together with experienced coaches for structured drills, personal feedback, and guided gameplay. We want every player to understand what they’re working on, why it matters, and how to keep improving after the session.",
+      "p4": "We stand for quality coaching, encouragement, and connection. Whether you’re building confidence or sharpening your competitive game, improvement should be challenging, enjoyable, and shared."
+    },
+    "since": "2024",
+    "copyright": "Apex Pickleballers",
+    "phone": "+1 (587) 500-2973",
+    "email": "hello@apexpickleballers.com",
+    "location": "Toronto, Ontario, Canada",
+    "address": {
+      "line1": "Toronto Dedicated Racquet Facility",
+      "city": "Toronto",
+      "state": "ON",
+      "zip": "M5V 2T6",
+      "country": "Canada"
+    },
+    "socials": {
+      "facebook": "https://facebook.com/apexpickleballers",
+      "instagram": "https://instagram.com/apexpickleballers",
+      "youtube": "https://youtube.com/@apexpickleballers",
+      "twitter": "https://twitter.com/apexpickleball"
+    }
+  },
+
+  "seo": {
+    "home": {
+      "title": "Apex Pickleballers | Coached Pickleball Clinics in Toronto",
+      "description": "Play with purpose. Improve together. Coached 4-hour pickleball clinics in Toronto led by Coach Cristóvão Abegão. 8 players max, 2 courts, 1 coach."
+    },
+    "camps": {
+      "title": "Upcoming Coached Clinics | Apex Pickleballers Toronto",
+      "description": "Browse 4-hour coached pickleball clinics in Toronto. Small groups of 8 players, individualized coaching, and game-changing drills."
+    },
+    "states": {
+      "title": "Pickleball Clinics & Locations | Apex Pickleballers",
+      "description": "Find Apex Pickleballers clinics in Toronto and expanding Canadian locations. Small group coaching for adult recreational players."
+    },
+    "coaches": {
+      "title": "Meet Coach Cris | Apex Pickleballers Lead Coach",
+      "description": "Meet Cristóvão 'Cris' Abegão, Professional Pickleball Coach in Canada. Mentored by Christina Chin and Alex Stojkov. Real-time feedback and doubles mastery."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions | Apex Pickleballers Clinics",
+      "description": "Got questions about our Toronto pickleball clinics? Find answers about the 8:1 ratio, 4-hour curriculum, equipment, skill levels, and CAD pricing."
+    },
+    "womenOnly": {
+      "title": "Women's Pickleball Clinics | Apex Pickleballers",
+      "description": "Empowering women's pickleball clinics in a supportive, focused environment. Build confidence, consistency, and connection."
+    },
+    "contact": {
+      "title": "Contact Us | Apex Pickleballers (+1 587 500-2973)",
+      "description": "Have questions about our upcoming Toronto clinics? Get in touch with Coach Cris and the Apex Pickleballers team."
+    }
+  },
+
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "Clinics", "items": [
+        { "label": "All Clinics", "href": "/camps" },
+        { "label": "Toronto Flagship (8:1)", "href": "/camps/toronto-beginner-clinic" },
+        { "label": "Women's Clinics", "href": "/women-only" }
+      ] },
+      { "label": "Curriculum", "href": "/#curriculum" },
+      { "label": "Coach Cris", "href": "/#coach-cris" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Contact", "href": "/contact-us" }
+    ],
+    "ctaLabel": "Reserve Your Spot",
+    "ctaHref": "/camps/toronto-beginner-clinic"
+  },
+
+  "footer": {
+    "tagline": "Play with purpose. Improve together. Coached 4-hour clinics bringing players together for structured drills, live feedback, and real community.",
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "Toronto Clinic", "href": "/camps/toronto-beginner-clinic" },
+      { "label": "Curriculum Schedule", "href": "/#curriculum" },
+      { "label": "Meet Coach Cris", "href": "/#coach-cris" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Contact Us", "href": "/contact-us" },
+      { "label": "🧪 Theme Sandbox", "href": "/sandbox" }
+    ],
+    "recentLocations": [
+      { "label": "Toronto, ON — Coached Beginner Clinic (8 Players)", "href": "/camps/toronto-beginner-clinic" },
+      { "label": "Toronto, ON — Intermediate Doubles Clinic (3.0–4.0)", "href": "/camps/toronto-beginner-clinic" }
+    ],
+    "newsletter": {
+      "heading": "Stay In The Loop",
+      "subtext": "Be the first to hear when new Toronto clinic dates and coaching spots open up.",
+      "placeholder": "Enter your email address...",
+      "buttonLabel": "Get Notified",
+      "successMessage": "✅ You're on the priority list! We'll notify you as soon as new clinic spots drop."
+    },
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "Refund & Cancellation Policy", "href": "/refunds" }
+    ]
+  },
+
+  "urgencyBar": {
+    "enabled": true,
+    "message": "🎾 Toronto Coached Clinic Announced — Strictly capped at 8 players (2 Courts, 1 Coach)",
+    "ctaLabel": "Reserve Your Spot →",
+    "ctaHref": "/camps/toronto-beginner-clinic"
+  },
+
+  "home": {
+    "hero": {
+      "badge": "🎾 Flagship Toronto Clinic · 8 Players Max (8:1 Coaching Ratio)",
+      "headline": "Play With Purpose.\nImprove Together.",
+      "subheadline": "Our first Toronto clinic is a 4-hour coached immersion for adult players: 8 players, 2 courts, and 1 coach. Turn your enthusiasm into lasting consistency with structured drills and on-the-spot personalized feedback.",
+      "ctaLabel": "Reserve Your Spot →",
+      "ctaHref": "/camps/toronto-beginner-clinic",
+      "videoYouTubeId": "kJQP7kiw5Fk",
+      "videoTitle": "Watch Coach Cris demonstrate technical correction and the first 3 shots",
+      "videoCaption": "🎯 Coached by Cristóvão 'Cris' Abegão — Professional Pickleball Coach in Canada",
+      "stats": [
+        { "count": 8, "suffix": ":1", "label": "Player-to-Coach Ratio" },
+        { "count": 4, "suffix": " Hours", "label": "Coached Immersion" },
+        { "count": 2, "suffix": " Courts", "label": "4 Players Per Court" },
+        { "count": 100, "suffix": "%", "label": "Individual Feedback" }
+      ]
+    },
+    "ticker": {
+      "items": [
+        "★ Apex Pickleballers — Play With Purpose. Improve Together.",
+        "★ Toronto Flagship Clinic: 8 Players, 2 Courts, 1 Coach",
+        "★ 4-Hour Coached Immersion & On-Court Drills",
+        "★ Led by Coach Cristóvão 'Cris' Abegão (4.5–5.0 Doubles Pro)",
+        "★ Welcoming & Encouraging Environment for Adults 40+",
+        "★ No Official Rating Required — Ideal for Players Building Consistency",
+        "★ Personalized Take-Home Coaching Notes For Every Player",
+        "★ 100% Satisfaction Guarantee"
+      ]
+    },
+    "skillLevels": {
+      "heading": "Is This Clinic For You?",
+      "subheading": "We believe improvement should be welcoming, encouraging, and shared. Here is how our clinics are structured.",
+      "cards": [
+        {
+          "level": "beginner",
+          "emoji": "🌱",
+          "title": "Beginner & Consistency Clinic",
+          "subtitle": "Ideal for players who know the basics and want to build consistency and confidence. No official rating required.",
+          "description": "Our first Toronto clinic is tailored for adults aged 40 and above who know the general rules of pickleball and want to gain control, stop unforced errors, and feel confident in open play.",
+          "ctaLabel": "Reserve Your Spot (8 Max)",
+          "ctaHref": "/camps/toronto-beginner-clinic",
+          "highlights": [
+            "Ideal for players who know the basics — no rating required",
+            "Welcoming, encouraging, and social tone for adults 40+",
+            "Master the kitchen game, soft dinking, and clean contact",
+            "8:1 player-to-coach ratio across 2 courts (4 per court)",
+            "Personalized live corrections and feedback on the spot"
+          ]
+        },
+        {
+          "level": "intermediate",
+          "emoji": "⚡",
+          "title": "Camp Level 3.0 – 4.0 Progression",
+          "subtitle": "For players ready to sharpen competitive weapons",
+          "description": "Master the first 3 shots, attack with punch, roll, and smash volleys, reset high-speed balls from anywhere on the court, and coordinate doubles court positioning.",
+          "ctaLabel": "Explore 3.0 – 4.0 Curriculum",
+          "ctaHref": "/camps/toronto-beginner-clinic",
+          "highlights": [
+            "The First 3 Shots: Serve, return & 3rd shot backspin/topspin",
+            "Attacking Volleys: Punch, roll, and smash techniques",
+            "Resets: Absorbing fast-paced balls off bounce & volley",
+            "Court Positioning: Movement, coverage, and team footwork",
+            "Doubles Mini-Tournament with personalized coach review"
+          ]
+        },
+        {
+          "level": "all-levels",
+          "emoji": "🤝",
+          "title": "Community & Connection",
+          "subtitle": "Play with purpose. Improve together.",
+          "description": "Pickleball is a social sport at its heart. Beyond drills, you will meet fellow enthusiastic players, exchange numbers, and build ongoing playing partnerships.",
+          "ctaLabel": "Learn Our Story",
+          "ctaHref": "/#about-us"
+        }
+      ]
+    },
+    "upcomingCamps": {
+      "heading": "Upcoming Coached Clinics",
+      "subheading": "Strictly limited to 8 players per clinic (2 courts, 4 players per court, 1 coach). Reserve before spots fill.",
+      "ctaLabel": "View Clinic Details →",
+      "ctaHref": "/camps/toronto-beginner-clinic"
+    },
+    "whyCampsWork": {
+      "heading": "Why Our Clinics Work",
+      "subheading": "Focused coaching, meaningful practice, and on-the-spot adjustments that make sense immediately.",
+      "pillars": [
+        {
+          "icon": "👥",
+          "title": "8:1 Player-to-Coach Ratio",
+          "description": "Only 8 players across 2 dedicated courts (4 players per court). Coach Cris works continuously across both courts so you get constant, personalized feedback."
+        },
+        {
+          "icon": "👁️",
+          "title": "Observant Real-Time Feedback",
+          "description": "Coach Cris notices what players do in real time and gives immediate adjustments on the spot to improve technical and strategic decision-making."
+        },
+        {
+          "icon": "🎾",
+          "title": "The First 3 Shots & Resets",
+          "description": "We break down the shots that dictate 80% of pickleball points: the serve, return, third shot drops/drives, and pace-absorbing resets."
+        },
+        {
+          "icon": "📝",
+          "title": "Personalized Action Plan",
+          "description": "During the doubles tournament, Coach Cris evaluates your individual performance and hands you a personalized list of things to work on next."
+        }
+      ]
+    },
+    "blueprint": {
+      "heading": "The 4-Hour Clinic Blueprint",
+      "subheading": "Every minute is intentional. Here is how your 4-hour coached clinic unfolds.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Meet, Greet & Full Warm-Up",
+          "duration": "30 mins",
+          "description": "Meet Coach Cris and the community. Complete warm-up covering dinking, drops, volleys, baseline depth, serving, and returning."
+        },
+        {
+          "number": "02",
+          "title": "The First 3 Shots",
+          "duration": "60 mins",
+          "description": "Master the serve, return, and 3rd shot drop or drive. Learn backspin and topspin off both forehand and backhand — 4 new weapons in your arsenal."
+        },
+        {
+          "number": "03",
+          "title": "Volleys & Pro Resets",
+          "duration": "90 mins",
+          "description": "Learn punch, roll, and smash volleys to keep opponents back at the baseline, followed by reset mastery to slow down fast-paced balls like a pro."
+        },
+        {
+          "number": "04",
+          "title": "Footwork & Doubles Tournament",
+          "duration": "60 mins",
+          "description": "Court coverage and dinking footwork drills, followed by a doubles mini-tournament where Coach Cris takes notes and delivers your personal action plan."
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "On The Court",
+      "subheading": "Authentic moments of adult recreational players learning, connecting, and celebrating progress together.",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&h=600&fit=crop",
+          "alt": "Adult pickleball players drilling on court with coach"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1641479430-e9e66dd8ba6c?w=800&h=600&fit=crop",
+          "alt": "Coach demonstrating dink mechanics and soft hands"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=800&h=600&fit=crop",
+          "alt": "Doubles players practicing third-shot drops and kitchen transition"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=600&fit=crop",
+          "alt": "Campers celebrating a great point together"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&h=600&fit=crop",
+          "alt": "Community of pickleball players gathered at court side"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800&h=600&fit=crop",
+          "alt": "Indoor pickleball clinic practice session with coach feedback"
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "4-Hour Coached Clinic Curriculum",
+      "subheading": "Developed by Coach Cris for maximum improvement, structured breaks, and personalized attention.",
+      "sessions": [
+        {
+          "time": "Block 1 (30 mins)",
+          "title": "Meet & Greet & Full Warm-Up",
+          "description": "Meet and greet Cris, the coach, and the rest of the community. Pickleball is a social sport at its heart. We will go through a complete warm-up: Dinking, Dropping, Volleying, Hitting Long balls, Serving and Returning. (Quick 1-min water break at the end)."
+        },
+        {
+          "time": "Block 2 (60 mins)",
+          "title": "The First 3 Shots",
+          "description": "The most important shots in Pickleball: the Serve, the Return, and the 3rd shot. Technical and strategic aspects. Learn how to hit backspin and topspin off your backhand and forehand — 4 new weapons in your pickleball arsenal. (1-min water breaks between drills)."
+        },
+        {
+          "time": "Block 3 (45 mins)",
+          "title": "Punch, Roll and Smash Volleys",
+          "description": "Work on how to attack and keep your opponent back at the baseline with these three tools. Learn exactly when to hit each of the three shots and for what tactical purpose. (1-min water breaks between drills)."
+        },
+        {
+          "time": "Block 4 (45 mins)",
+          "title": "Resets — Slow Down The Game Like A Pro",
+          "description": "One of the most underrated and useful skills in Pickleball. Learn how to slow down fast-paced balls coming at you and your partner, off the bounce or off the volley when at the baseline or transition zone. (1-min water break between drills)."
+        },
+        {
+          "time": "Block 5 (30 mins)",
+          "title": "Court Positioning & Footwork",
+          "description": "Who covers what part of the court and why, while working on where to position yourself while dinking. Learn how to use your feet to your Team's distinct advantage. (1-min water break between drills)."
+        },
+        {
+          "time": "Block 6 (30 mins)",
+          "title": "Doubles Tournament & Personal Coaching Notes",
+          "description": "Hone all the skills learnt and experience the new strategic mindset while playing a doubles tournament with different players. Coach Cris assesses each individual's performance and writes your personalized list of things to work on. (1-min water break between matches)."
+        }
+      ]
+    },
+    "videoTestimonials": {
+      "heading": "Real Progress. Real Community.",
+      "subheading": "Hear what adult recreational players experience when they learn with Coach Cris and Apex Pickleballers.",
+      "videos": [
+        {
+          "youtubeId": "kJQP7kiw5Fk",
+          "name": "Maria & Robert S.",
+          "location": "Toronto, ON",
+          "rating": 5,
+          "quote": "At 52, I was hesitant to take a clinic, but Coach Cris was so encouraging and sharp. He spotted my footwork error in 10 minutes, and my resets are ten times smoother now."
+        },
+        {
+          "youtubeId": "0h1sc8qSNPk",
+          "name": "David G.",
+          "location": "Oakville, ON",
+          "rating": 5,
+          "quote": "The 8-player cap makes all the difference. Cris was on our court constantly giving practical tips. The personalized notes at the end gave me a clear practice checklist."
+        },
+        {
+          "youtubeId": "quHQ3XyQlhs",
+          "name": "Elena M.",
+          "location": "Toronto, ON",
+          "rating": 5,
+          "quote": "Learning how to hit topspin and backspin on the first 3 shots completely changed how confident I feel entering open play. Can't recommend Apex enough!"
+        }
+      ]
+    },
+    "ctaBanner": {
+      "heading": "Ready To Play With Purpose & Confidence?",
+      "subheading": "Our Toronto clinic is strictly capped at 8 players to guarantee personal attention across 2 courts.",
+      "primaryCtaLabel": "Reserve Your Spot (8 Max) →",
+      "primaryCtaHref": "/camps/toronto-beginner-clinic",
+      "secondaryCtaLabel": "Call Us: +1 (587) 500-2973",
+      "secondaryCtaHref": "tel:+15875002973",
+      "guarantee": "100% Satisfaction Guarantee. If you don't feel more confident after the session, we will make it right."
+    }
+  },
+
+  "camps": {
+    "pageHero": {
+      "heading": "Coached Pickleball Clinics",
+      "subheading": "4-hour coached clinics in Toronto: 8 players, 2 courts, 1 coach. Structured practice, live feedback, and real community."
+    },
+    "emptyState": {
+      "heading": "No clinics match your filters",
+      "subtext": "Try clearing filters to see all available Toronto sessions.",
+      "ctaLabel": "Clear Filters",
+      "suggestion": "Or contact Coach Cris directly at +1 (587) 500-2973 to enquire about private or upcoming sessions."
+    },
+    "filters": {
+      "stateLabel": "All Regions",
+      "levelLabel": "All Levels",
+      "monthLabel": "All Months",
+      "sortLabel": "Sort By",
+      "levelOptions": [
+        { "value": "beginner", "label": "Beginner (Consistency & Confidence)" },
+        { "value": "intermediate", "label": "Intermediate (Level 3.0–4.0)" }
+      ],
+      "sortOptions": [
+        { "value": "date-asc", "label": "Date: Soonest First" },
+        { "value": "date-desc", "label": "Date: Latest First" },
+        { "value": "price-asc", "label": "Price: Low to High" }
+      ]
+    }
+  },
+
+  "campDetail": {
+    "registerLabel": "Reserve Your Spot For",
+    "seatsLeftSuffix": "spots left (8 max)",
+    "soldOutLabel": "Clinic Full (8/8 Filled)",
+    "limitedLabel": "Limited Spots",
+    "guaranteeText": "100% Satisfaction Guarantee. We want every player to leave with clarity, confidence, and measurable improvement.",
+    "sections": {
+      "schedule": "4-Hour Coached Clinic Curriculum",
+      "bonuses": "Everything Included With Your Registration",
+      "coach": "Your Coach — Cristóvão 'Cris' Abegão",
+      "faq": "Frequently Asked Questions",
+      "gallery": "Clinic Atmosphere"
+    },
+    "bonuses": [
+      {
+        "tag": "INCLUDED",
+        "title": "Personalized Coaching Notes",
+        "value": "$75 Value",
+        "description": "During the doubles mini-tournament, Coach Cris notes your individual strengths and specific technical/tactical habits to focus on next."
+      },
+      {
+        "tag": "INCLUDED",
+        "title": "The First 3 Shots Drill Blueprint",
+        "value": "$45 Value",
+        "description": "A take-home practice guide detailing the serve, return, 3rd shot drop/drive, and spin mechanics practiced during the clinic."
+      },
+      {
+        "tag": "INCLUDED",
+        "title": "Apex Community Playing Group",
+        "value": "Priceless",
+        "description": "Connect with your 7 fellow campers and the wider Apex Pickleballers network in Toronto for friendly open play and doubles partnerships."
+      }
+    ],
+    "genericFaqs": [
+      {
+        "q": "Is this clinic right for me if I'm 40+ or a beginner?",
+        "a": "Yes! Our first Toronto clinic is specifically designed for adult players (marketing focus 40+) who know the basic rules and want to build consistency, control, and court confidence without intimidation. No official rating is required."
+      },
+      {
+        "q": "What is the coaching format and ratio?",
+        "a": "Every clinic has exactly 8 players across 2 dedicated courts (4 players per court). Coach Cris works continuously across both courts — providing an 8:1 player-to-coach ratio with live adjustments on the spot."
+      },
+      {
+        "q": "What equipment do I need to bring?",
+        "a": "Bring your pickleball paddle, proper non-marking court/tennis shoes, athletic comfortable clothing, and a water bottle (32oz+). Pickleball balls, training cones, and targets are fully provided."
+      },
+      {
+        "q": "Are there scheduled breaks during the 4 hours?",
+        "a": "Yes! Each drill block is punctuated by 1-minute water breaks, with time built in to rest, hydrate, and chat with fellow players. The pace is active yet comfortable."
+      },
+      {
+        "q": "Where in Toronto is the clinic held and is there parking?",
+        "a": "The clinic is hosted at a premier dedicated indoor racquet facility in the Greater Toronto Area with ample free on-site parking. Exact facility address and arrival instructions are emailed to all 8 registered players immediately upon registration."
+      },
+      {
+        "q": "What is the refund and cancellation policy?",
+        "a": "Because each clinic is strictly capped at 8 players, your spot is reserved exclusively for you. Cancellations made at least 7 days before clinic date receive a full refund or free transfer to a future date."
+      }
+    ]
+  },
+
+  "states": {
+    "pageHero": {
+      "heading": "Clinics & Locations",
+      "subheading": "Launching in Toronto, Ontario with 4-hour coached clinics. Expanding across Canada."
+    },
+    "storiesSection": {
+      "heading": "Players Improving Together",
+      "label": "Camper Experiences"
+    }
+  },
+
+  "coaches": {
+    "pageHero": {
+      "heading": "Meet Coach Cris",
+      "subheading": "Professional Pickleball Coach in Canada · Mentored by Christina Chin & Alex Stojkov · Doubles Specialist 4.5–5.0"
+    },
+    "qualifications": [
+      "Professional Coach at Top Private Canadian Gyms",
+      "Mentored by Christina Chin ('Pickleball On Ice', CNPL Pro)",
+      "Mentored by Alex Stojkov (Master Canadian Coach & Course Creator)",
+      "Doubles Specialist (Skill Level 4.5–5.0)",
+      "Coaching experience across all ages (5 and up)",
+      "Observant real-time feedback & on-the-spot adjustments"
+    ]
+  },
+
+  "faq": {
+    "pageHero": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Everything you need to know about our Toronto coached clinics, format, and coaching philosophy."
+    },
+    "ctaSection": {
+      "heading": "Have a specific question?",
+      "subheading": "Coach Cris and our team are here to help. Reach out directly by phone or email.",
+      "ctaLabel": "Call +1 (587) 500-2973 →",
+      "ctaHref": "tel:+15875002973"
+    }
+  },
+
+  "womenOnly": {
+    "pageHero": {
+      "badge": "👩 Women's Clinics",
+      "heading": "Play With Purpose.\nThrive With Confidence.",
+      "subheading": "Encouraging, structured, and focused. Our women's clinics provide a welcoming environment to ask questions, hone your soft game, and build lasting doubles partnerships.",
+      "ctaLabel": "Explore Women's Clinics →",
+      "ctaHref": "/camps"
+    },
+    "whySection": {
+      "heading": "Why Our Clinics Are Unique",
+      "reasons": [
+        {
+          "icon": "💬",
+          "title": "Encouraging & Ego-Free",
+          "description": "A welcoming, patient space to ask every technical question, try new shots, and learn without pressure."
+        },
+        {
+          "icon": "🤝",
+          "title": "Lasting Community",
+          "description": "Meet fellow enthusiastic adult players and leave with regular doubles partners."
+        },
+        {
+          "icon": "📈",
+          "title": "On-The-Spot Correction",
+          "description": "Immediate real-time feedback from an observant coach who helps you adjust right on the court."
+        },
+        {
+          "icon": "🏆",
+          "title": "Small Group (8 Players Max)",
+          "description": "Maximum 8 players across 2 courts ensuring you get continuous repetitions and personalized attention."
+        }
+      ]
+    },
+    "themeColor": "#00E5FF"
+  },
+
+  "contact": {
+    "pageHero": {
+      "heading": "Get In Touch",
+      "subheading": "Reach out directly to Coach Cris and the Apex Pickleballers team."
+    },
+    "methods": [
+      {
+        "icon": "📞",
+        "label": "Phone / Direct Line",
+        "value": "+1 (587) 500-2973",
+        "href": "tel:+15875002973"
+      },
+      {
+        "icon": "📧",
+        "label": "Email",
+        "value": "hello@apexpickleballers.com",
+        "href": "mailto:hello@apexpickleballers.com"
+      },
+      {
+        "icon": "📍",
+        "label": "Location",
+        "value": "Toronto, Ontario, Canada",
+        "href": "#"
+      }
+    ],
+    "form": {
+      "heading": "Send Us A Message",
+      "fields": {
+        "name": "Your Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "experience": "Your Current Playing Experience (e.g., beginner, a few months, 3.0)",
+        "message": "What are you hoping to improve in your game?"
+      },
+      "submitLabel": "Send Message",
+      "successMessage": "✅ Thank you! Coach Cris will be in touch within 24 hours."
+    }
+  }
+}

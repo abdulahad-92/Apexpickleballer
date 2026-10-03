@@ -1,0 +1,149 @@
+/* Filter Bar */
+.filterBar {
+  background: #111813;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(226, 249, 82, 0.2);
+}
+.filterInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.selectGroup {
+  position: relative;
+  display: inline-block;
+}
+.filterSelect {
+  appearance: none;
+  background: #1C261F;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+  padding: 10px 40px 10px 20px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.filterSelect option {
+  background: #FFFFFF;
+  color: #111813;
+}
+.filterSelect:hover,
+.filterSelect:focus {
+  border-color: var(--clr-volt-bright);
+  outline: none;
+}
+.selectArrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--clr-volt-bright);
+  font-size: 10px;
+  pointer-events: none;
+}
+.clearBtn {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: var(--clr-volt-bright);
+  color: #111813;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(226, 249, 82, 0.25);
+  transition: all var(--transition-fast);
+}
+.clearBtn:hover {
+  background: #FFFFFF;
+  color: #111813;
+}
+.resultCountText {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+/* Results */
+.noResults {
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.noResultsIcon { font-size: 48px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+
+/* Camp Card */
+.card {
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 24, 19, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(17, 24, 19, 0.05);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(110, 148, 0, 0.4);
+  box-shadow: 0 16px 36px rgba(17, 24, 19, 0.1), 0 0 0 1px rgba(110, 148, 0, 0.2);
+}
+
+.cardTop {
+  background: var(--clr-volt);
+  padding: 24px 20px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.tornEdge {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 L0,0 L2,8 L4,2 L6,10 L8,4 L10,12 L12,6 L14,14 L16,8 L18,16 L20,10 L22,18 L24,12 L26,20 L28,14 L30,22 L32,16 L34,24 L36,18 L38,26 L40,20 L42,28 L44,22 L46,30 L48,24 L50,32 L52,26 L54,34 L56,28 L58,36 L60,30 L62,38 L64,32 L66,40 L68,34 L70,42 L72,36 L74,44 L76,38 L78,46 L80,40 L82,48 L84,42 L86,50 L88,44 L90,52 L92,46 L94,54 L96,48 L98,56 L100,50 L100,20 Z" fill="%23111813"/></svg>');
+  background-size: 100% 100%;
+}
+.location { font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #FFFFFF; text-transform: uppercase; line-height: 1.1; }
+.levelBadge { font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: var(--clr-volt-bright); text-transform: uppercase; }
+.dateText { font-family: var(--font-heading); font-size: 16px; font-weight: 800; color: #FFFFFF; text-transform: uppercase; margin-top: 2px; }
+
+.cardBody {
+  background: #111813;
+  padding: 32px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #FFFFFF;
+}
+.date { font-family: var(--font-heading); font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; display: none; }
+.time { font-size: 13px; color: rgba(255,255,255,0.7); }
+.coachRow { display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+.coachAvatar { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid var(--clr-volt-bright); }
+.coachAvatar img { width: 100%; height: 100%; object-fit: cover; }
+.coachName { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.85); }
+.price { font-family: var(--font-heading); font-size: 26px; font-weight: 900; color: var(--clr-volt-bright); margin-top: auto; }
+.cardFooter { padding: 16px 20px; border-top: 1px solid rgba(255,255,255,0.08); background: #111813; }
+
+@media (max-width: 1023px) { .grid { grid-template-columns: repeat(2, 1fr); } .filterSelect { min-width: 120px; } }
+@media (max-width: 767px) { .grid { grid-template-columns: 1fr; } .filterInner { flex-direction: column; } .filterSelect { width: 100%; min-width: unset; } }

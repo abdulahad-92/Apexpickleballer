@@ -1,0 +1,100 @@
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.subtitle {
+  font-size: 18px;
+  color: var(--clr-text-secondary);
+  max-width: 520px;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.card {
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+}
+.cardDark {
+  background: #111813;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 36px rgba(17, 24, 19, 0.12);
+}
+.cardYellow {
+  background: #FFFFFF;
+  color: #111813;
+  border: 2px solid var(--clr-volt);
+  box-shadow: 0 16px 36px rgba(110, 148, 0, 0.08);
+}
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.badge {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+.badgeYellow { background: var(--clr-volt-bright); color: #111813; font-weight: 800; }
+.badgeDark   { background: #111813; color: var(--clr-volt-bright); }
+.range {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+.cardTitle { line-height: 1.1; }
+.cardBody { font-size: 15px; line-height: 1.65; opacity: 0.85; }
+.cardYellow .cardBody { color: var(--clr-text-secondary); }
+.benefits { display: flex; flex-direction: column; gap: 10px; }
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.check {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--clr-volt);
+  background: rgba(110, 148, 0, 0.15);
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 1px;
+}
+.cardDark .check { color: var(--clr-volt-bright); background: rgba(226, 249, 82, 0.18); }
+.cardYellow .check { color: var(--clr-volt); background: rgba(110, 148, 0, 0.12); }
+
+@media (max-width: 767px) {
+  .grid { grid-template-columns: 1fr; }
+  .card { padding: 28px; }
+}

@@ -1,0 +1,1117 @@
+/* ============================================================
+   LightThemeShowcase.module.css
+   5 Premium Light Palettes — Full Landing Page Preview
+   ============================================================ */
+
+/* ─── Wrapper ─── */
+.showcase {
+  width: 100%;
+  min-height: 100vh;
+  transition: background-color 0.35s ease, color 0.35s ease;
+  font-family: var(--font-body, 'Inter', -apple-system, sans-serif);
+  background: var(--lt-bg);
+  color: var(--lt-text);
+}
+
+/* ============================================================
+   SPORT PALETTE 1: COURT BLUE & CHALK
+   Inspired by: PPA Pro Tour dual-tone blue court + sideline chalk
+   ============================================================ */
+.themeCourtBlue {
+  --lt-bg: #f4f7fb;
+  --lt-surface: #eaf0f8;
+  --lt-elevated: #dbe6f4;
+  --lt-text: #0c192c;
+  --lt-text-secondary: #435875;
+  --lt-text-muted: #7e94b2;
+  --lt-accent: #1958c7;
+  --lt-accent-hover: #13459c;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #1958c7;
+  --lt-border: rgba(25, 88, 199, 0.12);
+  --lt-border-hover: rgba(25, 88, 199, 0.28);
+  --lt-card-shadow: 0 2px 16px rgba(12, 25, 44, 0.05);
+  --lt-card-shadow-hover: 0 8px 32px rgba(25, 88, 199, 0.12);
+}
+
+/* ============================================================
+   SPORT PALETTE 2: OPTIC VOLT & CARBON
+   Inspired by: Dura Fast 40 / Franklin X-40 neon ball + carbon paddle
+   ============================================================ */
+.themeOpticVolt {
+  --lt-bg: #f8faf8;
+  --lt-surface: #eef3ee;
+  --lt-elevated: #dfe8de;
+  --lt-text: #111813;
+  --lt-text-secondary: #4a594d;
+  --lt-text-muted: #88988b;
+  --lt-accent: #111813;
+  --lt-accent-hover: #212e24;
+  --lt-accent-text: #e2f952;
+  --lt-highlight: #6e9400;
+  --lt-border: rgba(17, 24, 19, 0.09);
+  --lt-border-hover: rgba(110, 148, 0, 0.35);
+  --lt-card-shadow: 0 2px 14px rgba(17, 24, 19, 0.05);
+  --lt-card-shadow-hover: 0 8px 30px rgba(17, 24, 19, 0.10);
+}
+
+/* ============================================================
+   SPORT PALETTE 3: CHAMPIONSHIP EMERALD
+   Inspired by: US Open Pickleball (Naples, FL) + trophy medal gold
+   ============================================================ */
+.themeChampionship {
+  --lt-bg: #f5f9f6;
+  --lt-surface: #eaf3ec;
+  --lt-elevated: #dbe9de;
+  --lt-text: #0e2315;
+  --lt-text-secondary: #3e5b45;
+  --lt-text-muted: #7b9982;
+  --lt-accent: #1b5e28;
+  --lt-accent-hover: #13461e;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #b48316;
+  --lt-border: rgba(27, 94, 40, 0.10);
+  --lt-border-hover: rgba(27, 94, 40, 0.25);
+  --lt-card-shadow: 0 2px 14px rgba(14, 35, 21, 0.05);
+  --lt-card-shadow-hover: 0 8px 30px rgba(27, 94, 40, 0.12);
+}
+
+/* ============================================================
+   SPORT PALETTE 4: DESERT CLAY & SUN
+   Inspired by: Indian Wells & Palm Springs terracotta court surfaces
+   ============================================================ */
+.themeDesertClay {
+  --lt-bg: #fbf7f2;
+  --lt-surface: #f4ece1;
+  --lt-elevated: #e8dbcd;
+  --lt-text: #2d1c13;
+  --lt-text-secondary: #705849;
+  --lt-text-muted: #aa9384;
+  --lt-accent: #b85429;
+  --lt-accent-hover: #963f1a;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #b85429;
+  --lt-border: rgba(45, 28, 19, 0.10);
+  --lt-border-hover: rgba(184, 84, 41, 0.30);
+  --lt-card-shadow: 0 2px 14px rgba(45, 28, 19, 0.05);
+  --lt-card-shadow-hover: 0 8px 30px rgba(184, 84, 41, 0.12);
+}
+
+/* ============================================================
+   SPORT PALETTE 5: SUNSET BALL & DUSK
+   Inspired by: High-vis orange tournament ball + evening exhibition play
+   ============================================================ */
+.themeSunsetOrange {
+  --lt-bg: #faf7f5;
+  --lt-surface: #f4ece7;
+  --lt-elevated: #e8dcd5;
+  --lt-text: #221915;
+  --lt-text-secondary: #68574e;
+  --lt-text-muted: #a39087;
+  --lt-accent: #dc5819;
+  --lt-accent-hover: #b8440e;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #dc5819;
+  --lt-border: rgba(34, 25, 21, 0.09);
+  --lt-border-hover: rgba(220, 88, 25, 0.32);
+  --lt-card-shadow: 0 2px 14px rgba(34, 25, 21, 0.05);
+  --lt-card-shadow-hover: 0 8px 30px rgba(220, 88, 25, 0.12);
+}
+
+/* ============================================================
+   SPORT PALETTE 6: PACIFIC CYAN & NAVY
+   Inspired by: Newport Beach / Coastal PPA two-tone cyan court
+   ============================================================ */
+.themePacificCyan {
+  --lt-bg: #f2f8f9;
+  --lt-surface: #e5f1f3;
+  --lt-elevated: #d3e5e8;
+  --lt-text: #0a1d24;
+  --lt-text-secondary: #3e5f68;
+  --lt-text-muted: #7c9ca5;
+  --lt-accent: #0d8194;
+  --lt-accent-hover: #086574;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #0d8194;
+  --lt-border: rgba(13, 129, 148, 0.12);
+  --lt-border-hover: rgba(13, 129, 148, 0.28);
+  --lt-card-shadow: 0 2px 14px rgba(10, 29, 36, 0.05);
+  --lt-card-shadow-hover: 0 8px 30px rgba(13, 129, 148, 0.12);
+}
+
+/* ============================================================
+   STUDIO PALETTE 1: IVORY STUDIO — Warm cream + espresso + gold
+   Inspired by: Aesop, Saatchi Art, luxury interiors
+   ============================================================ */
+.themeIvory {
+  --lt-bg: #faf7f2;
+  --lt-surface: #f2ede5;
+  --lt-elevated: #e9e2d7;
+  --lt-text: #2c2520;
+  --lt-text-secondary: #7a6e62;
+  --lt-text-muted: #b5a899;
+  --lt-accent: #2c2520;
+  --lt-accent-hover: #44392f;
+  --lt-accent-text: #faf7f2;
+  --lt-highlight: #c8a96e;
+  --lt-border: rgba(44, 37, 32, 0.10);
+  --lt-border-hover: rgba(44, 37, 32, 0.22);
+  --lt-card-shadow: 0 2px 16px rgba(44, 37, 32, 0.06);
+  --lt-card-shadow-hover: 0 8px 32px rgba(44, 37, 32, 0.10);
+}
+
+/* ============================================================
+   STUDIO PALETTE 2: ARCTIC SLATE — Cool white + charcoal + blue
+   Inspired by: Apple, Vercel, Linear
+   ============================================================ */
+.themeArctic {
+  --lt-bg: #ffffff;
+  --lt-surface: #f5f5f7;
+  --lt-elevated: #ebebed;
+  --lt-text: #1d1d1f;
+  --lt-text-secondary: #6e6e73;
+  --lt-text-muted: #aeaeb2;
+  --lt-accent: #1d1d1f;
+  --lt-accent-hover: #3a3a3c;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #0071e3;
+  --lt-border: rgba(0, 0, 0, 0.08);
+  --lt-border-hover: rgba(0, 0, 0, 0.16);
+  --lt-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  --lt-card-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.09);
+}
+
+/* ============================================================
+   STUDIO PALETTE 3: WARM STONE — Sand + terracotta + deep brown
+   Inspired by: Rapha, premium spa/resort brands
+   ============================================================ */
+.themeStone {
+  --lt-bg: #f4f0eb;
+  --lt-surface: #ebe5dc;
+  --lt-elevated: #ddd5c9;
+  --lt-text: #332b24;
+  --lt-text-secondary: #7d7069;
+  --lt-text-muted: #b0a49a;
+  --lt-accent: #a16a4a;
+  --lt-accent-hover: #8b5a3d;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #a16a4a;
+  --lt-border: rgba(51, 43, 36, 0.09);
+  --lt-border-hover: rgba(51, 43, 36, 0.18);
+  --lt-card-shadow: 0 2px 14px rgba(51, 43, 36, 0.06);
+  --lt-card-shadow-hover: 0 8px 30px rgba(51, 43, 36, 0.10);
+}
+
+/* ============================================================
+   STUDIO PALETTE 4: OCEAN BREEZE — Pale gray-blue + navy + teal
+   Inspired by: Notion, Stripe light, clean SaaS
+   ============================================================ */
+.themeOcean {
+  --lt-bg: #f7f9fc;
+  --lt-surface: #eef1f6;
+  --lt-elevated: #e2e7ef;
+  --lt-text: #1a2333;
+  --lt-text-secondary: #5a6780;
+  --lt-text-muted: #9ba5b7;
+  --lt-accent: #1a2333;
+  --lt-accent-hover: #2c3a50;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #2a7ae9;
+  --lt-border: rgba(26, 35, 51, 0.08);
+  --lt-border-hover: rgba(26, 35, 51, 0.16);
+  --lt-card-shadow: 0 2px 14px rgba(26, 35, 51, 0.05);
+  --lt-card-shadow-hover: 0 8px 28px rgba(26, 35, 51, 0.09);
+}
+
+/* ============================================================
+   STUDIO PALETTE 5: SAGE GARDEN — Off-white green + olive + forest
+   Inspired by: Organic luxury, wellness, Equinox light
+   ============================================================ */
+.themeSage {
+  --lt-bg: #f5f6f1;
+  --lt-surface: #eaece4;
+  --lt-elevated: #dde0d5;
+  --lt-text: #2a2e26;
+  --lt-text-secondary: #636b58;
+  --lt-text-muted: #a0a693;
+  --lt-accent: #4a5e3c;
+  --lt-accent-hover: #3b4d30;
+  --lt-accent-text: #ffffff;
+  --lt-highlight: #4a5e3c;
+  --lt-border: rgba(42, 46, 38, 0.08);
+  --lt-border-hover: rgba(42, 46, 38, 0.16);
+  --lt-card-shadow: 0 2px 14px rgba(42, 46, 38, 0.05);
+  --lt-card-shadow-hover: 0 8px 28px rgba(42, 46, 38, 0.09);
+}
+
+/* ============================================================
+   CONTROL BAR
+   ============================================================ */
+.controlBar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--lt-bg);
+  border-bottom: 1px solid var(--lt-border);
+  padding: 12px 24px;
+  backdrop-filter: blur(12px);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.controlInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.controlLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.controlBrandBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.controlLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--lt-text-muted);
+}
+
+.controlBrand {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--lt-text);
+}
+
+.categoryPills {
+  display: inline-flex;
+  align-items: center;
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  border-radius: 24px;
+  padding: 3px;
+  gap: 3px;
+}
+
+.categoryPill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: transparent;
+  color: var(--lt-text-secondary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.categoryPill:hover {
+  color: var(--lt-text);
+}
+
+.categoryPillActive {
+  background: var(--lt-text);
+  color: var(--lt-bg);
+}
+
+.themeDropdown {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dropdownSelect {
+  appearance: none;
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  color: var(--lt-text);
+  font-family: var(--font-body, sans-serif);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 38px 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.dropdownSelect:hover {
+  border-color: var(--lt-border-hover);
+}
+
+.dropdownSelect:focus {
+  outline: none;
+  border-color: var(--lt-highlight);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Explicit high-contrast styling for native browser options popup */
+.dropdownSelect option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 10px 14px !important;
+}
+
+.dropdownSelect optgroup {
+  background-color: #f1f5f9 !important;
+  color: #0369a1 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  padding: 8px 10px !important;
+}
+
+/* ─── QUICK THEME BUTTONS STRIP ─── */
+.themeButtonsStrip {
+  max-width: 1200px;
+  margin: 12px auto 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--lt-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.themeButtonsGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.themeButtonsGroupLabel {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--lt-text-muted);
+  min-width: 115px;
+}
+
+.themePillBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--lt-border);
+  font-family: var(--font-body, sans-serif);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.themePillBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.themePillBtnActive {
+  box-shadow: 0 0 0 2px var(--lt-highlight), 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+  font-weight: 800;
+}
+
+.themePillDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.themePillName {
+  line-height: 1;
+}
+
+/* Secondary Vibe Bar */
+.vibeBar {
+  max-width: 1200px;
+  margin: 8px auto 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--lt-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vibeMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.vibeTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  background: var(--lt-surface);
+  color: var(--lt-highlight);
+  border: 1px solid var(--lt-border);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.vibeDesc {
+  color: var(--lt-text-secondary);
+  font-size: 12px;
+}
+
+.swatchGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.swatchChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  padding: 3px 7px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--lt-text-secondary);
+}
+
+.swatchDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  padding: 100px 24px 80px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroBadge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--lt-text-muted);
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(38px, 5.5vw, 68px);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+  color: var(--lt-text);
+  margin-bottom: 20px;
+}
+
+.heroTitleAccent {
+  color: var(--lt-highlight);
+}
+
+.heroSub {
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.6;
+  color: var(--lt-text-secondary);
+  max-width: 640px;
+  margin: 0 auto 36px;
+}
+
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--lt-accent);
+  color: var(--lt-accent-text);
+  font-family: var(--font-heading, sans-serif);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.heroCta:hover {
+  background: var(--lt-accent-hover);
+  transform: translateY(-2px);
+}
+
+.heroTrust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--lt-text-muted);
+}
+
+.heroTrust strong {
+  color: var(--lt-text);
+}
+
+/* ============================================================
+   AUTHORITY RIBBON
+   ============================================================ */
+.ribbon {
+  background: var(--lt-surface);
+  border-top: 1px solid var(--lt-border);
+  border-bottom: 1px solid var(--lt-border);
+  padding: 28px 24px;
+}
+
+.ribbonInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ribbonStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 140px;
+}
+
+.ribbonVal {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  color: var(--lt-text);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.ribbonLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--lt-text-muted);
+}
+
+.ribbonDiv {
+  width: 1px;
+  height: 32px;
+  background: var(--lt-border);
+}
+
+/* ============================================================
+   SECTION HEADER (SHARED)
+   ============================================================ */
+.sectionWrap {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionWrapAlt {
+  padding: 80px 24px;
+  background: var(--lt-surface);
+  border-top: 1px solid var(--lt-border);
+  border-bottom: 1px solid var(--lt-border);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.sectionTag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--lt-text-muted);
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: var(--lt-text);
+  line-height: 1.08;
+  margin-bottom: 14px;
+}
+
+.sectionDesc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--lt-text-secondary);
+}
+
+/* ============================================================
+   BENTO GRID (FEATURES)
+   ============================================================ */
+.bentoGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bentoCard {
+  background: var(--lt-bg);
+  border: 1px solid var(--lt-border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.25s ease;
+  box-shadow: var(--lt-card-shadow);
+}
+
+.bentoCard:hover {
+  border-color: var(--lt-border-hover);
+  box-shadow: var(--lt-card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.bentoCardWide {
+  grid-column: span 2;
+}
+
+.bentoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--lt-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lt-text);
+}
+
+.bentoLabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--lt-text-muted);
+}
+
+.bentoCardTitle {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--lt-text);
+  line-height: 1.2;
+}
+
+.bentoCardText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--lt-text-secondary);
+}
+
+.bentoStat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--lt-text);
+}
+
+/* ============================================================
+   CAMP CARDS
+   ============================================================ */
+.campGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.campCard {
+  background: var(--lt-bg);
+  border: 1px solid var(--lt-border);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.25s ease;
+  box-shadow: var(--lt-card-shadow);
+}
+
+.campCard:hover {
+  border-color: var(--lt-border-hover);
+  box-shadow: var(--lt-card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.campTags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.campTag {
+  background: var(--lt-surface);
+  color: var(--lt-text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--lt-border);
+}
+
+.campTagAccent {
+  background: var(--lt-accent);
+  color: var(--lt-accent-text);
+  border-color: transparent;
+}
+
+.campTitle {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--lt-text);
+  line-height: 1.25;
+}
+
+.campMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--lt-text-secondary);
+}
+
+.campFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--lt-border);
+}
+
+.campPrice {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--lt-text);
+}
+
+.campPriceSub {
+  font-size: 10px;
+  color: var(--lt-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.campBtn {
+  background: var(--lt-accent);
+  color: var(--lt-accent-text);
+  font-family: var(--font-heading, sans-serif);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.campBtn:hover {
+  background: var(--lt-accent-hover);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonialGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonialCard {
+  background: var(--lt-bg);
+  border: 1px solid var(--lt-border);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.25s ease;
+  box-shadow: var(--lt-card-shadow);
+}
+
+.testimonialCard:hover {
+  border-color: var(--lt-border-hover);
+  box-shadow: var(--lt-card-shadow-hover);
+}
+
+.testimonialTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonialAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--lt-surface);
+  color: var(--lt-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  border: 2px solid var(--lt-border);
+}
+
+.testimonialName {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--lt-text);
+}
+
+.testimonialCity {
+  font-size: 12px;
+  color: var(--lt-text-muted);
+}
+
+.testimonialStars {
+  display: flex;
+  gap: 3px;
+  color: var(--lt-highlight);
+}
+
+.testimonialQuote {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--lt-text-secondary);
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.testimonialGain {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--lt-text);
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  padding: 4px 10px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faqList {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background: var(--lt-bg);
+  border: 1px solid var(--lt-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faqItem:hover {
+  border-color: var(--lt-border-hover);
+}
+
+.faqItemOpen {
+  border-color: var(--lt-border-hover);
+  background: var(--lt-surface);
+}
+
+.faqHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faqQ {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--lt-text);
+}
+
+.faqChevron {
+  color: var(--lt-text-muted);
+  flex-shrink: 0;
+}
+
+.faqBody {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--lt-border);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--lt-text-secondary);
+}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.finalCta {
+  padding: 80px 24px 100px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.finalCtaCard {
+  background: var(--lt-surface);
+  border: 1px solid var(--lt-border);
+  border-radius: 20px;
+  padding: 56px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.finalCtaTitle {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--lt-text);
+  letter-spacing: -0.5px;
+}
+
+.finalCtaDesc {
+  font-size: 16px;
+  color: var(--lt-text-secondary);
+  max-width: 500px;
+}
+
+.finalCtaBtn {
+  background: var(--lt-accent);
+  color: var(--lt-accent-text);
+  font-family: var(--font-heading, sans-serif);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.finalCtaBtn:hover {
+  background: var(--lt-accent-hover);
+  transform: translateY(-2px);
+}
+
+.finalCtaNote {
+  font-size: 12px;
+  color: var(--lt-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .bentoGrid, .campGrid, .testimonialGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bentoCardWide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .bentoGrid, .campGrid, .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+  .bentoCardWide {
+    grid-column: span 1;
+  }
+  .ribbonInner {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .ribbonDiv {
+    display: none;
+  }
+  .controlInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

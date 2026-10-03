@@ -1,0 +1,16 @@
+.bar {
+  background: #111813;
+  padding: 10px 0;
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid rgba(226, 249, 82, 0.2);
+}
+.text {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--clr-volt-bright);
+  text-align: center;
+}
+

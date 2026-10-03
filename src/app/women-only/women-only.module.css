@@ -1,0 +1,265 @@
+/* Pink theme override for women's page */
+.hero {
+  position: relative;
+  padding: 100px 0 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 0%, rgba(233, 30, 140, 0.18) 0%, transparent 70%),
+              linear-gradient(180deg, #0d1b2a 0%, #1a0d1a 100%);
+}
+
+.heroInner { position: relative; max-width: 720px; margin: 0 auto; }
+
+.badge {
+  display: inline-block;
+  background: rgba(233, 30, 140, 0.15);
+  border: 1px solid rgba(233, 30, 140, 0.4);
+  color: #e91e8c;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 40px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+  font-weight: 900;
+  color: var(--clr-text-primary);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.heroSub {
+  font-size: 18px;
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroCta {
+  background: linear-gradient(135deg, #e91e8c 0%, #c2185b 100%);
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 8px 24px rgba(233, 30, 140, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.heroCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(233, 30, 140, 0.45);
+}
+
+/* Stats bar */
+.statsBar {
+  background: rgba(233, 30, 140, 0.08);
+  border-top: 1px solid rgba(233, 30, 140, 0.2);
+  border-bottom: 1px solid rgba(233, 30, 140, 0.2);
+  padding: 24px 0;
+}
+
+.statsInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.statItem { text-align: center; }
+
+.statItem strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 900;
+  color: #e91e8c;
+}
+
+.statItem span {
+  font-size: 12px;
+  color: var(--clr-text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: rgba(233, 30, 140, 0.2);
+}
+
+/* Why section */
+.whySection { padding: 80px 0; }
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 900;
+  color: var(--clr-text-primary);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sectionSub {
+  text-align: center;
+  color: var(--clr-text-secondary);
+  font-size: 16px;
+  margin-top: -32px;
+  margin-bottom: 48px;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.reasonCard {
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.reasonCard:hover {
+  border-color: rgba(233, 30, 140, 0.35);
+  transform: translateY(-4px);
+}
+
+.reasonIcon { font-size: 36px; display: block; margin-bottom: 16px; }
+.reasonTitle {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+  margin-bottom: 10px;
+}
+.reasonDesc { font-size: 13px; color: var(--clr-text-secondary); line-height: 1.7; }
+
+/* Testimonials */
+.testimonialStrip {
+  background: rgba(233, 30, 140, 0.05);
+  border-top: 1px solid rgba(233, 30, 140, 0.15);
+  border-bottom: 1px solid rgba(233, 30, 140, 0.15);
+  padding: 64px 0;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonialCard {
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonialQuote {
+  font-size: 15px;
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonialAuthor { display: flex; flex-direction: column; gap: 2px; }
+.testimonialAuthor strong { font-size: 14px; color: var(--clr-text-primary); font-weight: 700; }
+.testimonialAuthor span { font-size: 12px; color: var(--clr-text-muted); }
+
+/* Coaches section */
+.coachesSection { padding: 80px 0; }
+
+.coachGrid { display: flex; flex-direction: column; gap: 20px; max-width: 720px; margin: 0 auto; }
+
+.coachCard {
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: border-color 0.2s;
+}
+
+.coachCard:hover { border-color: rgba(233, 30, 140, 0.3); }
+
+.coachPhoto {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  border: 3px solid #e91e8c;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.coachName {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+  margin-bottom: 6px;
+}
+
+.coachBio { font-size: 13px; color: var(--clr-text-secondary); line-height: 1.6; margin-bottom: 10px; }
+
+.coachBadges { display: flex; gap: 6px; flex-wrap: wrap; }
+.coachBadge {
+  background: rgba(233, 30, 140, 0.1);
+  border: 1px solid rgba(233, 30, 140, 0.25);
+  color: #e91e8c;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+/* CTA */
+.ctaSection {
+  background: linear-gradient(135deg, #1a0d1a 0%, #0d1b2a 100%);
+  padding: 80px 0;
+  text-align: center;
+  border-top: 1px solid rgba(233, 30, 140, 0.2);
+}
+
+.ctaInner { max-width: 600px; margin: 0 auto; }
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--clr-text-primary);
+  margin-bottom: 12px;
+}
+.ctaSub { font-size: 16px; color: var(--clr-text-secondary); margin-bottom: 36px; }
+.ctaBtns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 1023px) {
+  .reasonsGrid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .reasonsGrid { grid-template-columns: 1fr; }
+  .statsInner { gap: 24px; }
+  .statDivider { display: none; }
+  .coachCard { flex-direction: column; }
+}

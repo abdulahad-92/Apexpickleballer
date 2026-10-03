@@ -1,0 +1,192 @@
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.heroSub {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 16px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timelineContainer {
+  max-width: 900px;
+  padding: 60px 20px;
+}
+
+.monthGroup {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.monthGroup:last-child {
+  margin-bottom: 0;
+}
+
+.monthSticky {
+  position: sticky;
+  top: 120px;
+  width: 160px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.monthTitle {
+  font-size: 24px;
+  color: var(--clr-text-primary);
+  margin-bottom: 12px;
+}
+
+.monthLine {
+  width: 100%;
+  height: 2px;
+  background: var(--clr-border);
+}
+
+.campsList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campRow {
+  display: flex;
+  align-items: center;
+  background: var(--clr-bg-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  gap: 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.campRow:hover {
+  transform: translateX(4px);
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: var(--shadow-card);
+}
+
+.dateCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  border-right: 1px solid var(--clr-border);
+  padding-right: 24px;
+}
+
+.dayNum {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+  line-height: 1;
+}
+
+.dayName {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #e63946;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.infoCol {
+  flex: 1;
+}
+
+.infoTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.infoTop h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.venueText {
+  font-size: 14px;
+  color: var(--clr-text-secondary);
+}
+
+.statusCol {
+  min-width: 140px;
+  text-align: right;
+}
+
+.statusSoldOut {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.statusLimited {
+  font-size: 13px;
+  font-weight: 700;
+  color: #b58105;
+}
+
+.statusAvail {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2a9d8f;
+}
+
+.actionCol {
+  padding-left: 24px;
+}
+
+@media (max-width: 767px) {
+  .monthGroup {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .monthSticky {
+    position: static;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .campRow {
+    flex-wrap: wrap;
+  }
+  
+  .dateCol {
+    border-right: none;
+    border-bottom: 1px solid var(--clr-border);
+    padding-right: 0;
+    padding-bottom: 16px;
+    width: 100%;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+  
+  .statusCol {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .actionCol {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .actionCol .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

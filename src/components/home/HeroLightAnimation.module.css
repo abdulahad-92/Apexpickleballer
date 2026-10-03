@@ -1,0 +1,63 @@
+.lightCanvasContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ambientGlow {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 70vw;
+  height: 60vh;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(226, 249, 82, 0.35) 0%,
+    rgba(110, 148, 0, 0.10) 45%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  animation: breatheGlow 7s ease-in-out infinite alternate;
+  mix-blend-mode: multiply;
+}
+
+.courtGridLines {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to bottom, rgba(17, 24, 19, 0.04) 1px, transparent 1px),
+    linear-gradient(to right, rgba(17, 24, 19, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 75%);
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@keyframes breatheGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -48%) scale(1.1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(-50%, -52%) scale(0.9);
+    opacity: 0.7;
+  }
+}

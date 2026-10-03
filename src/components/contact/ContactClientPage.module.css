@@ -1,0 +1,188 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: flex-start;
+  max-width: 1200px;
+}
+
+/* Left Column */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pill {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid var(--clr-text-primary);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  align-self: flex-start;
+}
+.heading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--clr-text-primary);
+}
+.description {
+  font-size: 15px;
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+}
+.contactCard {
+  background: var(--clr-bg-gray);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.iconBox {
+  width: 48px;
+  height: 48px;
+  background: var(--clr-volt);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+.cardText {
+  display: flex;
+  flex-direction: column;
+}
+.cardLabel {
+  font-size: 13px;
+  color: var(--clr-text-secondary);
+}
+.cardValue {
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  font-size: 16px;
+}
+
+/* Right Column (Form) */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.radioTabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.radioTab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--clr-border);
+  background: var(--clr-bg-white);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.radioTab:hover { background: var(--clr-bg-light); }
+.radioTab.active {
+  background: #111813;
+  border-color: #111813;
+  color: var(--clr-volt-bright);
+}
+.radioCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radioTab.active .radioCircle {
+  border-color: var(--clr-volt-bright);
+}
+.radioTab.active .radioCircle::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--clr-volt-bright);
+  border-radius: 50%;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.fullWidth {
+  grid-column: 1 / -1;
+}
+.formLabel {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--clr-text-primary);
+  margin-bottom: 8px;
+  display: block;
+}
+.required {
+  color: var(--clr-red);
+}
+.inputBase {
+  width: 100%;
+  padding: 16px;
+  background: var(--clr-bg-gray);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--clr-text-primary);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+.inputBase:focus {
+  border-color: var(--clr-volt);
+  background: var(--clr-bg-white);
+}
+.submitBtn {
+  grid-column: 1 / -1;
+  background: #111813;
+  color: var(--clr-volt-bright);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 18px;
+  border-radius: var(--radius-sm);
+  border: 2px solid #111813;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(17, 24, 19, 0.2);
+  transition: all var(--transition-fast);
+}
+.submitBtn:hover {
+  background: var(--clr-volt);
+  border-color: var(--clr-volt);
+  color: #FFFFFF;
+}
+.submitBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.success { text-align: center; padding: 60px 0; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.successIcon { font-size: 56px; }
+
+@media (max-width: 991px) {
+  .layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .formGrid { grid-template-columns: 1fr; }
+  .radioTabs { flex-direction: column; }
+}

@@ -1,0 +1,130 @@
+.hero {
+  display: none;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 80px 0;
+  max-width: 1200px;
+}
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pill {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid var(--clr-text-primary);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  align-self: flex-start;
+}
+.heading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--clr-text-primary);
+  margin-bottom: 24px;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+.accordionItem {
+  border-bottom: 1px solid var(--clr-border);
+}
+.accordionTrigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.question {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--clr-text-primary);
+  padding-right: 24px;
+}
+.chevron {
+  color: var(--clr-text-primary);
+  transition: transform var(--transition-fast);
+}
+.open .chevron {
+  transform: rotate(180deg);
+}
+.accordionPanel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.open .accordionPanel {
+  max-height: 500px;
+}
+.answer {
+  padding-bottom: 24px;
+  font-size: 15px;
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightText {
+  font-size: 15px;
+  color: var(--clr-text-secondary);
+  line-height: 1.7;
+}
+.imageWrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.imageWrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ctaSection {
+  background: var(--clr-bg-gray);
+  padding: 80px 0;
+  text-align: center;
+}
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.ctaHeading {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.ctaSub {
+  font-size: 16px;
+  color: var(--clr-text-secondary);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .layout { grid-template-columns: 1fr; }
+}

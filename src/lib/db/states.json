@@ -1,0 +1,254 @@
+[
+  {
+    "code": "ON",
+    "name": "Ontario",
+    "campCount": 3,
+    "slug": "ontario",
+    "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=600&h=400&fit=crop"
+  },
+  {
+    "code": "AZ",
+    "name": "Arizona",
+    "campCount": 6,
+    "slug": "arizona",
+    "image": "https://picsum.photos/seed/AZ/400/250"
+  },
+  {
+    "code": "TX",
+    "name": "Texas",
+    "campCount": 9,
+    "slug": "texas",
+    "image": "https://picsum.photos/seed/TX/400/250"
+  },
+  {
+    "code": "CA",
+    "name": "California",
+    "campCount": 8,
+    "slug": "california",
+    "image": "https://picsum.photos/seed/CA/400/250"
+  },
+  {
+    "code": "FL",
+    "name": "Florida",
+    "campCount": 7,
+    "slug": "florida",
+    "image": "https://picsum.photos/seed/FL/400/250"
+  },
+  {
+    "code": "CO",
+    "name": "Colorado",
+    "campCount": 5,
+    "slug": "colorado",
+    "image": "https://picsum.photos/seed/CO/400/250"
+  },
+  {
+    "code": "NV",
+    "name": "Nevada",
+    "campCount": 4,
+    "slug": "nevada",
+    "image": "https://picsum.photos/seed/NV/400/250"
+  },
+  {
+    "code": "GA",
+    "name": "Georgia",
+    "campCount": 6,
+    "slug": "georgia",
+    "image": "https://picsum.photos/seed/GA/400/250"
+  },
+  {
+    "code": "NC",
+    "name": "North Carolina",
+    "campCount": 5,
+    "slug": "north-carolina",
+    "image": "https://picsum.photos/seed/NC/400/250"
+  },
+  {
+    "code": "NY",
+    "name": "New York",
+    "campCount": 8,
+    "slug": "new-york",
+    "image": "https://picsum.photos/seed/NY/400/250"
+  },
+  {
+    "code": "MI",
+    "name": "Michigan",
+    "campCount": 3,
+    "slug": "michigan",
+    "image": "https://picsum.photos/seed/MI/400/250"
+  },
+  {
+    "code": "OH",
+    "name": "Ohio",
+    "campCount": 4,
+    "slug": "ohio",
+    "image": "https://picsum.photos/seed/OH/400/250"
+  },
+  {
+    "code": "IL",
+    "name": "Illinois",
+    "campCount": 7,
+    "slug": "illinois",
+    "image": "https://picsum.photos/seed/IL/400/250"
+  },
+  {
+    "code": "WA",
+    "name": "Washington",
+    "campCount": 5,
+    "slug": "washington",
+    "image": "https://picsum.photos/seed/WA/400/250"
+  },
+  {
+    "code": "OR",
+    "name": "Oregon",
+    "campCount": 4,
+    "slug": "oregon",
+    "image": "https://picsum.photos/seed/OR/400/250"
+  },
+  {
+    "code": "PA",
+    "name": "Pennsylvania",
+    "campCount": 6,
+    "slug": "pennsylvania",
+    "image": "https://picsum.photos/seed/PA/400/250"
+  },
+  {
+    "code": "VA",
+    "name": "Virginia",
+    "campCount": 5,
+    "slug": "virginia",
+    "image": "https://picsum.photos/seed/VA/400/250"
+  },
+  {
+    "code": "TN",
+    "name": "Tennessee",
+    "campCount": 4,
+    "slug": "tennessee",
+    "image": "https://picsum.photos/seed/TN/400/250"
+  },
+  {
+    "code": "MN",
+    "name": "Minnesota",
+    "campCount": 3,
+    "slug": "minnesota",
+    "image": "https://picsum.photos/seed/MN/400/250"
+  },
+  {
+    "code": "UT",
+    "name": "Utah",
+    "campCount": 4,
+    "slug": "utah",
+    "image": "https://picsum.photos/seed/UT/400/250"
+  },
+  {
+    "code": "MO",
+    "name": "Missouri",
+    "campCount": 3,
+    "slug": "missouri",
+    "image": "https://picsum.photos/seed/MO/400/250"
+  },
+  {
+    "code": "WI",
+    "name": "Wisconsin",
+    "campCount": 3,
+    "slug": "wisconsin",
+    "image": "https://picsum.photos/seed/WI/400/250"
+  },
+  {
+    "code": "HI",
+    "name": "Hawaii",
+    "campCount": 2,
+    "slug": "hawaii",
+    "image": "https://picsum.photos/seed/HI/400/250"
+  },
+  {
+    "code": "NM",
+    "name": "New Mexico",
+    "campCount": 2,
+    "slug": "new-mexico",
+    "image": "https://picsum.photos/seed/NM/400/250"
+  },
+  {
+    "code": "SC",
+    "name": "South Carolina",
+    "campCount": 3,
+    "slug": "south-carolina",
+    "image": "https://picsum.photos/seed/SC/400/250"
+  },
+  {
+    "code": "KY",
+    "name": "Kentucky",
+    "campCount": 2,
+    "slug": "kentucky",
+    "image": "https://picsum.photos/seed/KY/400/250"
+  },
+  {
+    "code": "IN",
+    "name": "Indiana",
+    "campCount": 3,
+    "slug": "indiana",
+    "image": "https://picsum.photos/seed/IN/400/250"
+  },
+  {
+    "code": "MA",
+    "name": "Massachusetts",
+    "campCount": 5,
+    "slug": "massachusetts",
+    "image": "https://picsum.photos/seed/MA/400/250"
+  },
+  {
+    "code": "MD",
+    "name": "Maryland",
+    "campCount": 4,
+    "slug": "maryland",
+    "image": "https://picsum.photos/seed/MD/400/250"
+  },
+  {
+    "code": "NJ",
+    "name": "New Jersey",
+    "campCount": 4,
+    "slug": "new-jersey",
+    "image": "https://picsum.photos/seed/NJ/400/250"
+  },
+  {
+    "code": "CT",
+    "name": "Connecticut",
+    "campCount": 3,
+    "slug": "connecticut",
+    "image": "https://picsum.photos/seed/CT/400/250"
+  },
+  {
+    "code": "ID",
+    "name": "Idaho",
+    "campCount": 2,
+    "slug": "idaho",
+    "image": "https://picsum.photos/seed/ID/400/250"
+  },
+  {
+    "code": "MT",
+    "name": "Montana",
+    "campCount": 1,
+    "slug": "montana",
+    "image": "https://picsum.photos/seed/MT/400/250"
+  },
+  {
+    "code": "KS",
+    "name": "Kansas",
+    "campCount": 2,
+    "slug": "kansas",
+    "image": "https://picsum.photos/seed/KS/400/250"
+  },
+  {
+    "code": "IA",
+    "name": "Iowa",
+    "campCount": 2,
+    "slug": "iowa",
+    "image": "https://picsum.photos/seed/IA/400/250"
+  },
+  {
+    "code": "OK",
+    "name": "Oklahoma",
+    "campCount": 2,
+    "slug": "oklahoma",
+    "image": "https://picsum.photos/seed/OK/400/250"
+  }
+]
