@@ -113,12 +113,11 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
         )}
       </div>
 
-      {/* Breadcrumb */}
-      <div className={`container ${styles.breadcrumb}`}>
-        <Link href="/">Home</Link> <span>/</span>
-        <Link href="/camps">Clinics</Link> <span>/</span>
-        <span>{camp.city}, {camp.stateCode}</span>
-      </div>
+      {/* Breadcrumb (no Home link: the header already provides it) */}
+      <nav className={`container ${styles.breadcrumb}`} aria-label="Breadcrumb">
+        <Link href="/camps">Clinics</Link> <span aria-hidden="true">/</span>
+        <span className={styles.crumbCurrent} aria-current="page">{camp.city}, {camp.stateCode}</span>
+      </nav>
 
       {/* Page Hero with Coached Clinic Highlights */}
       <section className={`section--dark ${styles.pageHero}`}>
@@ -458,6 +457,7 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
         <div className="modal-card modal-card--lg">
           <button className="modal-close" onClick={() => setModalOpen(false)} aria-label="Close modal">✕</button>
           
+          <div className={styles.modalScroll}>
           {submitted ? (
             <div className={styles.modalSuccess}>
               <div className={styles.modalSuccessIcon}>🎉</div>
@@ -556,7 +556,7 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
                       className="form-input" 
                       value={experience} 
                       onChange={(e) => setExperience(e.target.value)}
-                      style={{ background: '#FFFFFF', color: '#111813', fontWeight: 500 }}
+                      style={{ color: '#111813', fontWeight: 500 }}
                     >
                       <option value="know-basics">I know the basic rules &amp; want to build consistency</option>
                       <option value="casual-rec">Casual recreational play (played 5–15 times)</option>
@@ -595,6 +595,7 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
               </div>
             </div>
           )}
+          </div>
         </div>
       </div>
     </>

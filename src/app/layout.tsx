@@ -4,6 +4,7 @@ import UrgencyBar from '@/components/layout/UrgencyBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ScrollRevealInit from '@/components/ui/ScrollRevealInit';
+import HashScroll from '@/components/ui/HashScroll';
 import siteContent from '@/content/site.content.json';
 
 const { seo, brand } = siteContent;
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <ScrollRevealInit />
+        <HashScroll />
       </body>
     </html>
   );

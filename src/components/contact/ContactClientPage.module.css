@@ -43,6 +43,8 @@
   align-items: center;
   gap: 20px;
 }
+.contactCardLink { transition: transform var(--transition-fast), box-shadow var(--transition-fast); }
+.contactCardLink:hover { transform: translateY(-2px); box-shadow: var(--shadow-card-hover); }
 .iconBox {
   width: 48px;
   height: 48px;
@@ -75,49 +77,21 @@
   flex-direction: column;
   gap: 24px;
 }
-.radioTabs {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.radioTab {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--clr-border);
-  background: var(--clr-bg-white);
+.formHeading {
   font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--clr-text-primary);
+}
+.formSub {
+  font-size: 15px;
+  color: var(--clr-text-secondary);
+  margin-top: 6px;
+}
+.formError {
+  color: var(--clr-red);
   font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-.radioTab:hover { background: var(--clr-bg-light); }
-.radioTab.active {
-  background: #111813;
-  border-color: #111813;
-  color: var(--clr-volt-bright);
-}
-.radioCircle {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 2px solid var(--clr-text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.radioTab.active .radioCircle {
-  border-color: var(--clr-volt-bright);
-}
-.radioTab.active .radioCircle::after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: var(--clr-volt-bright);
-  border-radius: 50%;
+  font-weight: 600;
 }
 
 .formGrid {
@@ -184,5 +158,4 @@
 }
 @media (max-width: 600px) {
   .formGrid { grid-template-columns: 1fr; }
-  .radioTabs { flex-direction: column; }
 }

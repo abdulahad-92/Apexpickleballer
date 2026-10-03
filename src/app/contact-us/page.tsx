@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Join a waitlist, become a coach, or get in touch with our team.',
+  description: 'Join the Apex Pickleballers waitlist or get in touch with Coach Cris and the team about our Toronto pickleball clinics.',
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="container">
           <span className="section-label">Get In Touch</span>
           <h1 className="text-white">We&apos;re Here To Help</h1>
-          <p className={styles.heroSubtitle}>Whether you want to join a waitlist, coach with us, partner with us, or just have a question — we respond within 24 hours.</p>
+          <p className={styles.heroSubtitle}>Join the waitlist for upcoming Toronto clinics or just ask a question — we respond within 24 hours.</p>
         </div>
       </section>
       <ContactClientPage />

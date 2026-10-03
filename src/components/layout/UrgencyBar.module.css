@@ -2,8 +2,8 @@
   background: #111813;
   color: #fff;
   padding: 10px 16px;
-  position: sticky;
-  top: 0;
+  /* Not sticky: the header is the only pinned element. Making both sticky at top:0 made them overlap. */
+  position: relative;
   z-index: 1001;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   animation: slideDown 0.4s ease;

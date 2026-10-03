@@ -79,7 +79,7 @@
 
 /* ─── Reset ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font-body);
   font-size: 16px;
@@ -329,6 +329,16 @@ input, select, textarea {
 }
 .modal-overlay.is-active .modal-card {
   transform: scale(1) translateY(0);
+}
+/* Wide variant used by the two-column booking checkout. Without this the card stayed at 480px and clipped the form. */
+.modal-card--lg {
+  max-width: 920px;
+  padding: 40px 36px 32px;
+}
+@media (max-width: 600px) {
+  .modal-overlay { padding: 12px; }
+  .modal-card { padding: 44px 20px 24px; border-radius: var(--radius-lg); }
+  .modal-card--lg { padding: 44px 18px 20px; }
 }
 .modal-close {
   position: absolute;
