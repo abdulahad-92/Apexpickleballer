@@ -276,10 +276,10 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
             </div>
             <div className={styles.specCell}>
               <div className={styles.specIcon}>🛡️</div>
-              <h4 className={styles.specLabel}>Cancellation Terms</h4>
-              <p className={styles.specVal}>Full Refund Available</p>
-              <p className={styles.specSub}>Cancel up to 7 days before clinic</p>
-              <p className={styles.specSub}>100% Satisfaction Guarantee</p>
+              <h4 className={styles.specLabel}>Cancellation Policy</h4>
+              <p className={styles.specVal}>Refund Up to 1 Day Prior</p>
+              <p className={styles.specSub}>Cancel 24h before for 100% refund</p>
+              <p className={styles.specSub}>Camp day: transfer to next session</p>
             </div>
             <div className={`${styles.specCell} ${styles.specCellBonus}`}>
               <div className={styles.specIcon}>🎁</div>
