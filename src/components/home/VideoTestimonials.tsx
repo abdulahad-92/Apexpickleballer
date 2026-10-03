@@ -4,9 +4,9 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import styles from './VideoTestimonials.module.css';
-import CustomCursor from '@/components/sandbox/CustomCursor';
+import CustomCursor from '@/components/animations/CustomCursor';
 
-const Animation3D = dynamic(() => import('@/components/sandbox/Animation3D'), { ssr: false });
+const Animation3D = dynamic(() => import('@/components/animations/Animation3D'), { ssr: false });
 
 const testimonials = [
   { name: 'Barbara M.', photo: 'https://i.pravatar.cc/300?img=5', rating: 5, quote: 'I went from barely keeping the ball in play to winning my first recreational tournament — in 6 weeks after just 2 camps. I still can\'t believe it.' },

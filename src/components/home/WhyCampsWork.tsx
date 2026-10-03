@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './WhyCampsWork.module.css';
 import { Trophy, ClipboardList, Target, Zap } from 'lucide-react';
-import AnimationPhysics from '@/components/sandbox/AnimationPhysics';
+import AnimationPhysics from '@/components/animations/AnimationPhysics';
 
 const features = [
   {

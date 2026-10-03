@@ -91,8 +91,7 @@
       { "label": "Curriculum Schedule", "href": "/#curriculum" },
       { "label": "Meet Coach Cris", "href": "/#coach-cris" },
       { "label": "FAQ", "href": "/faq" },
-      { "label": "Contact Us", "href": "/contact-us" },
-      { "label": "🧪 Theme Sandbox", "href": "/sandbox" }
+      { "label": "Contact Us", "href": "/contact-us" }
     ],
     "recentLocations": [
       { "label": "Toronto, ON — Coached Beginner Clinic (8 Players)", "href": "/camps/toronto-beginner-clinic" },

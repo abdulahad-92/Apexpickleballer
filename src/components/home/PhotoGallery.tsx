@@ -4,8 +4,8 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './PhotoGallery.module.css';
-import AnimationParallax from '@/components/sandbox/AnimationParallax';
-import CustomCursor from '@/components/sandbox/CustomCursor';
+import AnimationParallax from '@/components/animations/AnimationParallax';
+import CustomCursor from '@/components/animations/CustomCursor';
 
 const photos = [
   { src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop', alt: 'Coaching session on court' },
