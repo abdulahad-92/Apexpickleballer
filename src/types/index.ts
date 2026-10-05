@@ -61,6 +61,8 @@ export interface Coach {
   certifications: string[];
   youtubeId?: string;
   womenOnly?: boolean;
+  phone?: string;
+  featured?: boolean;
 }
 
 export interface StateEntry {

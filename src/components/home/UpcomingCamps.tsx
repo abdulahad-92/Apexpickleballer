@@ -25,7 +25,7 @@ export default function UpcomingCamps({ camps }: { camps: Camp[] }) {
           <span className="section-label section-label--dark">Coached Clinics</span>
           <h2>Flagship Toronto Coached Sessions</h2>
           <p className={styles.subtitle}>
-            Strictly limited to 8 players across 2 courts (4 per court) with Coach Cris. Reserve your spot before it fills.
+            Focused small group of 8 players across 2 courts (4 per court) with Coach Cris. Reserve your spot before it fills.
           </p>
         </div>
 

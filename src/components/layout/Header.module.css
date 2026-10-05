@@ -83,8 +83,63 @@
 .navLink.active { color: var(--clr-text-primary); }
 .navLink.active::after { width: 100%; }
 
-/* CTA Button */
+/* CTA Button & Actions */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
 .ctaBtn { flex-shrink: 0; }
+
+.phoneCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--clr-text-primary);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--clr-border);
+  background: rgba(255, 255, 255, 0.7);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.phoneCta:hover {
+  background: var(--clr-bg-light);
+  border-color: var(--clr-volt);
+  color: var(--clr-volt);
+  transform: translateY(-1px);
+}
+.phoneIcon {
+  color: var(--clr-volt);
+  flex-shrink: 0;
+}
+
+.mobilePhoneCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  background: var(--clr-bg-light);
+  border: 1px solid var(--clr-border);
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  margin-top: 12px;
+  text-decoration: none;
+}
+.mobilePhoneCta:hover {
+  border-color: var(--clr-volt);
+  color: var(--clr-volt);
+}
 
 /* Hamburger */
 .hamburger {

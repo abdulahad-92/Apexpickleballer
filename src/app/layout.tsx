@@ -20,7 +20,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: brand.fullName,
-    images: [{ url: '/og-image.jpg' }],
+    images: [{ url: '/images/apex_logo.jpeg' }],
+  },
+  icons: {
+    icon: '/images/apex_logo.jpeg',
+    shortcut: '/images/apex_logo.jpeg',
+    apple: '/images/apex_logo.jpeg',
   },
 };
 

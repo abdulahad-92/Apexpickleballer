@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './CampDetailClient.module.css';
 import siteContent from '@/content/site.content.json';
-import { ShieldCheck, Users, Clock, MapPin, CheckCircle2, Award, Phone } from 'lucide-react';
+import { ShieldCheck, Users, Clock, MapPin, CheckCircle2, Award, Phone, Calendar, Trophy, Sparkles } from 'lucide-react';
 
 const statusConfig = {
   available:  { label: '✓ Spots Available',   cls: 'badge--available' },
@@ -150,27 +150,37 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
             marginBottom: '28px'
           }}>
             <div>
-              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700 }}>📅 Date &amp; Time</div>
+              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <Calendar size={13} /> Date &amp; Time
+              </div>
               <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF', marginTop: '2px' }}>{camp.dateDisplay}</div>
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>{camp.time}</div>
             </div>
             <div>
-              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700 }}>📍 Toronto Venue</div>
+              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <MapPin size={13} /> Toronto Venue
+              </div>
               <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF', marginTop: '2px' }}>{camp.venueName}</div>
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>Free on-site parking</div>
             </div>
             <div>
-              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700 }}>👥 Class Format</div>
+              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <Users size={13} /> Class Format
+              </div>
               <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF', marginTop: '2px' }}>8 Players · 2 Courts</div>
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>4 players per court · 1 coach</div>
             </div>
             <div>
-              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700 }}>🎯 Skill Level</div>
+              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <Trophy size={13} /> Skill Level
+              </div>
               <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF', marginTop: '2px' }}>Beginner &amp; Consistency</div>
               <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>No official rating required</div>
             </div>
             <div>
-              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700 }}>💳 CAD Pricing</div>
+              <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--clr-volt)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <Award size={13} /> CAD Pricing
+              </div>
               <div style={{ fontSize: '18px', fontWeight: 900, color: 'var(--clr-volt)', marginTop: '2px' }}>${priceDisplay}</div>
               <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)' }}>All 4 hours + notes included</div>
             </div>
@@ -246,42 +256,42 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
           {/* 6-Cell Specs Grid */}
           <div className={styles.specsGrid}>
             <div className={styles.specCell}>
-              <div className={styles.specIcon}>📍</div>
+              <div className={styles.specIcon}><MapPin size={24} /></div>
               <h4 className={styles.specLabel}>Toronto Venue</h4>
               <p className={styles.specVal}>{camp.venueName}</p>
               <p className={styles.specSub}>Greater Toronto Area, ON</p>
               <p className={styles.specSub}>Free Dedicated On-Site Parking</p>
             </div>
             <div className={styles.specCell}>
-              <div className={styles.specIcon}>📅</div>
+              <div className={styles.specIcon}><Calendar size={24} /></div>
               <h4 className={styles.specLabel}>Date &amp; Schedule</h4>
               <p className={styles.specVal}>{camp.dateDisplay}</p>
               <p className={styles.specSub}>{camp.time}</p>
               <p className={styles.specSub}>1-min scheduled water breaks between drills</p>
             </div>
             <div className={styles.specCell}>
-              <div className={styles.specIcon}>👥</div>
+              <div className={styles.specIcon}><Users size={24} /></div>
               <h4 className={styles.specLabel}>Format &amp; Ratio</h4>
               <p className={styles.specVal}>8 Players · 2 Courts</p>
               <p className={styles.specSub}>4 players per court</p>
               <p className={styles.specSub}>Coach Cris works across both courts</p>
             </div>
             <div className={styles.specCell}>
-              <div className={styles.specIcon}>🎾</div>
+              <div className={styles.specIcon}><Trophy size={24} /></div>
               <h4 className={styles.specLabel}>Equipment &amp; Attire</h4>
-              <p className={styles.specVal}>Bring Your Paddle</p>
-              <p className={styles.specSub}>Court/athletic shoes required</p>
-              <p className={styles.specSub}>Balls &amp; targets fully provided</p>
+              <p className={styles.specVal}>Equipment Provided</p>
+              <p className={styles.specSub}>Bring your own paddle if you prefer</p>
+              <p className={styles.specSub}>Court/athletic shoes required · Balls provided</p>
             </div>
             <div className={styles.specCell}>
-              <div className={styles.specIcon}>🛡️</div>
+              <div className={styles.specIcon}><ShieldCheck size={24} /></div>
               <h4 className={styles.specLabel}>Cancellation Policy</h4>
-              <p className={styles.specVal}>Refund Up to 1 Day Prior</p>
-              <p className={styles.specSub}>Cancel 24h before for 100% refund</p>
-              <p className={styles.specSub}>Camp day: transfer to next session</p>
+              <p className={styles.specVal}>100% Refund Prior to 24h</p>
+              <p className={styles.specSub}>Zero questions asked up to 24h before</p>
+              <p className={styles.specSub}>Clinic day: transfer to next session</p>
             </div>
             <div className={`${styles.specCell} ${styles.specCellBonus}`}>
-              <div className={styles.specIcon}>🎁</div>
+              <div className={styles.specIcon}><Sparkles size={24} /></div>
               <h4 className={styles.specLabel}>Included Takeaways</h4>
               <ul className={styles.bonusList}>
                 {campDetail.bonuses.map((b) => (
@@ -369,7 +379,9 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
 
             {/* Guarantee */}
             <div className={`${styles.contentBlock} ${styles.guaranteeBlock}`}>
-              <div className={styles.guaranteeSeal}>🛡️</div>
+              <div className={styles.guaranteeSeal}>
+                <ShieldCheck size={36} style={{ color: 'var(--clr-volt)' }} />
+              </div>
               <div>
                 <h3>100% Satisfaction Guarantee</h3>
                 <p>{campDetail.guaranteeText}</p>
@@ -424,7 +436,10 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
                 </button>
               )}
               
-              <p className={styles.guarantee}>🛡️ {campDetail.guaranteeText}</p>
+              <p className={styles.guarantee}>
+                <ShieldCheck size={14} style={{ display: 'inline', verticalAlign: '-2px', marginRight: '4px', color: 'var(--clr-volt)' }} />
+                {campDetail.guaranteeText}
+              </p>
               {!isSoldOut && (
                 <div className={`badge ${status.cls} ${styles.seatsBadge}`}>
                   {camp.seatsLeft <= 3 ? `⚠ Only ${camp.seatsLeft} Spots Left!` : `${camp.seatsLeft} of 8 Spots Available`}
@@ -479,11 +494,11 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
                 <h3 className={styles.checkoutHeading}>Clinic Registration</h3>
                 <div className={styles.checkoutCampInfo}>
                   <strong style={{ fontSize: '16px', display: 'block', marginBottom: '4px' }}>{camp.title}</strong>
-                  <span>📅 {camp.dateDisplay}</span>
-                  <span>⏰ {camp.time}</span>
-                  <span>📍 {camp.venueName} (Toronto, ON)</span>
-                  <span style={{ color: 'var(--clr-volt)', fontWeight: 700, marginTop: '4px' }}>
-                    👥 8:1 Ratio (4 Players per Court · 1 Coach)
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Calendar size={13} /> {camp.dateDisplay}</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Clock size={13} /> {camp.time}</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><MapPin size={13} /> {camp.venueName} (Toronto, ON)</span>
+                  <span style={{ color: 'var(--clr-volt)', fontWeight: 700, marginTop: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Users size={13} /> 8:1 Ratio (4 Players per Court · 1 Coach)
                   </span>
                 </div>
                 

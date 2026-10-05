@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
 import siteContent from '@/content/site.content.json';
 import PaddleLogo from '@/components/common/PaddleLogo';
+import { Phone } from 'lucide-react';
 
 const { nav, brand } = siteContent;
 
@@ -76,10 +77,16 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA */}
-        <Link href={nav.ctaHref} className={`btn btn--primary ${styles.ctaBtn}`}>
-          {nav.ctaLabel}
-        </Link>
+        {/* CTAs */}
+        <div className={styles.navActions}>
+          <a href={`tel:${brand.phone}`} className={styles.phoneCta} title="Call Coach Cris">
+            <Phone size={14} className={styles.phoneIcon} />
+            <span className={styles.phoneText}>{brand.phone}</span>
+          </a>
+          <Link href={nav.ctaHref} className={`btn btn--primary ${styles.ctaBtn}`}>
+            {nav.ctaLabel}
+          </Link>
+        </div>
 
         {/* Hamburger */}
         <button
@@ -126,6 +133,10 @@ export default function Header() {
               )}
             </div>
           ))}
+          <a href={`tel:${brand.phone}`} className={styles.mobilePhoneCta}>
+            <Phone size={16} />
+            <span>Call Coach Cris: {brand.phone}</span>
+          </a>
           <Link href={nav.ctaHref} className={`btn btn--primary btn--full ${styles.mobileCta}`}>
             {nav.ctaLabel}
           </Link>

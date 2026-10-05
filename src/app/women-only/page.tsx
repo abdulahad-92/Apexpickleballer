@@ -5,8 +5,16 @@ import siteContent from '@/content/site.content.json';
 import coachesData from '@/lib/db/coaches.json';
 import type { Coach } from '@/types';
 import styles from './women-only.module.css';
+import { MessageCircle, Users, TrendingUp, Trophy, Star } from 'lucide-react';
 
 const { seo, womenOnly } = siteContent;
+
+const reasonIcons = [
+  <MessageCircle key="1" size={26} style={{ color: 'var(--clr-volt)' }} />,
+  <Users key="2" size={26} style={{ color: 'var(--clr-volt)' }} />,
+  <TrendingUp key="3" size={26} style={{ color: 'var(--clr-volt)' }} />,
+  <Trophy key="4" size={26} style={{ color: 'var(--clr-volt)' }} />,
+];
 
 export const metadata: Metadata = {
   title: seo.womenOnly.title,
@@ -58,7 +66,9 @@ export default function WomenOnlyPage() {
           </div>
           <div className={styles.statDivider} />
           <div className={styles.statItem}>
-            <strong>4.9 ⭐</strong>
+            <strong style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', justifyContent: 'center' }}>
+              4.9 <Star size={18} fill="var(--clr-volt)" stroke="var(--clr-volt)" />
+            </strong>
             <span>Average Rating</span>
           </div>
         </div>
@@ -71,7 +81,7 @@ export default function WomenOnlyPage() {
           <div className={styles.reasonsGrid}>
             {womenOnly.whySection.reasons.map((r, i) => (
               <div key={r.title} className={styles.reasonCard} data-reveal data-reveal-delay={String(i + 1)}>
-                <span className={styles.reasonIcon}>{r.icon}</span>
+                <span className={styles.reasonIcon}>{reasonIcons[i % reasonIcons.length]}</span>
                 <h3 className={styles.reasonTitle}>{r.title}</h3>
                 <p className={styles.reasonDesc}>{r.description}</p>
               </div>

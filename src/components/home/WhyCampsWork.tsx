@@ -3,13 +3,12 @@
 import React from 'react';
 import styles from './WhyCampsWork.module.css';
 import { Trophy, ClipboardList, Target, Zap } from 'lucide-react';
-import AnimationPhysics from '@/components/animations/AnimationPhysics';
 
 const features = [
   {
     icon: <Trophy className={styles.iconSvg} />,
     title: '8:1 Player-to-Coach Ratio',
-    desc: 'Strictly 8 players across 2 dedicated courts (4 per court). Coach Cris works continuously across both courts for maximum attention.',
+    desc: 'Focused small group of 8 players across 2 dedicated courts (4 per court). Coach Cris works continuously across both courts for maximum attention.',
   },
   {
     icon: <ClipboardList className={styles.iconSvg} />,
@@ -30,10 +29,9 @@ const features = [
 
 interface WhyCampsWorkProps {
   transparentBg?: boolean;
-  enablePhysics?: boolean;
 }
 
-export default function WhyCampsWork({ transparentBg = false, enablePhysics = true }: WhyCampsWorkProps) {
+export default function WhyCampsWork({ transparentBg = false }: WhyCampsWorkProps) {
   return (
     <section className={`section ${styles.whySection} ${transparentBg ? styles.transparent : 'section--dark2'}`}>
       <div className={styles.contentOverlay}>
@@ -56,11 +54,6 @@ export default function WhyCampsWork({ transparentBg = false, enablePhysics = tr
           </div>
         </div>
       </div>
-      {enablePhysics && (
-        <div className={styles.animationForeground} aria-hidden="true">
-          <AnimationPhysics />
-        </div>
-      )}
     </section>
   );
 }

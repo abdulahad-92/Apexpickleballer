@@ -49,8 +49,8 @@
       "description": "Find Apex Pickleballers clinics in Toronto and expanding Canadian locations. Small group coaching for adult recreational players."
     },
     "coaches": {
-      "title": "Meet Coach Cris | Apex Pickleballers Lead Coach",
-      "description": "Meet Cristóvão 'Cris' Abegão, Professional Pickleball Coach in Canada. Mentored by Christina Chin and Alex Stojkov. Real-time feedback and doubles mastery."
+      "title": "Meet with Our Coaches | Apex Pickleballers",
+      "description": "Meet Coach Cristóvão 'Cris' Abegão and our coaching team. Mentored by Christina Chin and Alex Stojkov. Real-time feedback and doubles mastery."
     },
     "faq": {
       "title": "Frequently Asked Questions | Apex Pickleballers Clinics",
@@ -74,8 +74,8 @@
         { "label": "Toronto Flagship (8:1)", "href": "/camps/toronto-beginner-clinic" },
         { "label": "Women's Clinics", "href": "/women-only" }
       ] },
-      { "label": "Curriculum", "href": "/#curriculum" },
-      { "label": "Coach Cris", "href": "/#coach-cris" },
+      { "label": "Curriculum", "href": "/curriculum" },
+      { "label": "Coaches", "href": "/coaches" },
       { "label": "FAQ", "href": "/faq" },
       { "label": "Contact", "href": "/contact-us" }
     ],
@@ -88,8 +88,8 @@
     "quickLinks": [
       { "label": "Home", "href": "/" },
       { "label": "Toronto Clinic", "href": "/camps/toronto-beginner-clinic" },
-      { "label": "Curriculum Schedule", "href": "/#curriculum" },
-      { "label": "Meet Coach Cris", "href": "/#coach-cris" },
+      { "label": "Curriculum", "href": "/curriculum" },
+      { "label": "Meet with Our Coaches", "href": "/coaches" },
       { "label": "FAQ", "href": "/faq" },
       { "label": "Contact Us", "href": "/contact-us" }
     ],
@@ -102,7 +102,7 @@
       "subtext": "Be the first to hear when new Toronto clinic dates and coaching spots open up.",
       "placeholder": "Enter your email address...",
       "buttonLabel": "Get Notified",
-      "successMessage": "✅ You're on the priority list! We'll notify you as soon as new clinic spots drop."
+      "successMessage": "You're on the priority list! We'll notify you as soon as new clinic spots drop."
     },
     "legalLinks": [
       { "label": "Privacy Policy", "href": "/privacy" },
@@ -113,21 +113,21 @@
 
   "urgencyBar": {
     "enabled": true,
-    "message": "🎾 Toronto Coached Clinic Announced — Strictly capped at 8 players (2 Courts, 1 Coach)",
+    "message": "Toronto Coached Clinic Announced — 8 Players Max (2 Courts, 1 Coach)",
     "ctaLabel": "Reserve Your Spot →",
     "ctaHref": "/camps/toronto-beginner-clinic"
   },
 
   "home": {
     "hero": {
-      "badge": "🎾 Flagship Toronto Clinic · 8 Players Max (8:1 Coaching Ratio)",
+      "badge": "Flagship Toronto Clinic · 8 Players Max (8:1 Coaching Ratio)",
       "headline": "Play With Purpose.\nImprove Together.",
       "subheadline": "Our first Toronto clinic is a 4-hour coached immersion for adult players: 8 players, 2 courts, and 1 coach. Turn your enthusiasm into lasting consistency with structured drills and on-the-spot personalized feedback.",
       "ctaLabel": "Reserve Your Spot →",
       "ctaHref": "/camps/toronto-beginner-clinic",
       "videoYouTubeId": "kJQP7kiw5Fk",
       "videoTitle": "Watch Coach Cris demonstrate technical correction and the first 3 shots",
-      "videoCaption": "🎯 Coached by Cristóvão 'Cris' Abegão — Professional Pickleball Coach in Canada",
+      "videoCaption": "Coached by Cristóvão 'Cris' Abegão — Professional Pickleball Coach in Canada",
       "stats": [
         { "count": 8, "suffix": ":1", "label": "Player-to-Coach Ratio" },
         { "count": 4, "suffix": " Hours", "label": "Coached Immersion" },
@@ -196,7 +196,7 @@
     },
     "upcomingCamps": {
       "heading": "Upcoming Coached Clinics",
-      "subheading": "Strictly limited to 8 players per clinic (2 courts, 4 players per court, 1 coach). Reserve before spots fill.",
+      "subheading": "Limited to 8 players per clinic (2 courts, 4 players per court, 1 coach). Reserve before spots fill.",
       "ctaLabel": "View Clinic Details →",
       "ctaHref": "/camps/toronto-beginner-clinic"
     },
@@ -351,7 +351,7 @@
     },
     "ctaBanner": {
       "heading": "Ready To Play With Purpose & Confidence?",
-      "subheading": "Our Toronto clinic is strictly capped at 8 players to guarantee personal attention across 2 courts.",
+      "subheading": "Our Toronto clinic is limited to 8 players to guarantee personal attention across 2 courts.",
       "primaryCtaLabel": "Reserve Your Spot (8 Max) →",
       "primaryCtaHref": "/camps/toronto-beginner-clinic",
       "secondaryCtaLabel": "Call Us: +1 (587) 500-2973",
@@ -432,7 +432,7 @@
       },
       {
         "q": "What equipment do I need to bring?",
-        "a": "Bring your pickleball paddle, proper non-marking court/tennis shoes, athletic comfortable clothing, and a water bottle (32oz+). Pickleball balls, training cones, and targets are fully provided."
+        "a": "Equipment is provided on-site! You are welcome to bring your own paddle if you prefer. Please bring proper non-marking court/tennis shoes, athletic comfortable clothing, and a water bottle (32oz+). Tournament balls, targets, and loaner paddles are fully provided."
       },
       {
         "q": "Are there scheduled breaks during the 4 hours?",
@@ -444,7 +444,7 @@
       },
       {
         "q": "What is the refund and cancellation policy?",
-        "a": "You can request a 100% full refund up to 1 day (24 hours) before the clinic. On the day of the clinic, refunds are no longer accepted; however, we will gladly adjust and transfer you to the next upcoming clinic date if you wish."
+        "a": "We offer a 100% full refund prior to 24 hours (1 day) before the clinic with zero questions asked! On clinic day or upon request, we will gladly adjust and transfer you to the next upcoming clinic session so your spot and investment are protected."
       }
     ]
   },

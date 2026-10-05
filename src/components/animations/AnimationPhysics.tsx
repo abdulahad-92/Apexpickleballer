@@ -2,20 +2,26 @@
 import { useEffect, useRef } from 'react';
 import Matter from 'matter-js';
 
-export default function AnimationPhysics() {
+interface AnimationPhysicsProps {
+  ballCount?: number;
+}
+
+export default function AnimationPhysics({ ballCount = 14 }: AnimationPhysicsProps) {
   const sceneRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = sceneRef.current;
     if (!container) return;
 
-    const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint, Events } = Matter;
+    const { Engine, Render, Runner, Bodies, Composite, Events } = Matter;
 
-    const engine = Engine.create();
-    engine.gravity.y = 0.8;
+    const engine = Engine.create({
+      enableSleeping: false, // keep balls active and responsive to hover
+    });
+    engine.gravity.y = 0.6;
 
-    let width = container.clientWidth || 800;
-    let height = container.clientHeight || 600;
+    let width = container.clientWidth || 1200;
+    let height = container.clientHeight || 450;
 
     const render = Render.create({
       element: container,
@@ -35,11 +41,11 @@ export default function AnimationPhysics() {
     canvas.style.left = '0';
     canvas.style.width = '100%';
     canvas.style.height = '100%';
-    canvas.style.pointerEvents = 'auto';
+    canvas.style.pointerEvents = 'none'; // Never block footer links or interactions
 
-    // Static Boundaries (thickness = 100 to prevent tunneling)
-    const wallThickness = 100;
-    const boundaryOpts = { isStatic: true, restitution: 0.85, friction: 0.02 };
+    // Static Boundaries (walls around the footer container)
+    const wallThickness = 120;
+    const boundaryOpts = { isStatic: true, restitution: 0.9, friction: 0.02 };
     const ground = Bodies.rectangle(width / 2, height + wallThickness / 2, width * 2, wallThickness, { ...boundaryOpts, label: 'ground' });
     const wallLeft = Bodies.rectangle(-wallThickness / 2, height / 2, wallThickness, height * 2, { ...boundaryOpts, label: 'wallLeft' });
     const wallRight = Bodies.rectangle(width + wallThickness / 2, height / 2, wallThickness, height * 2, { ...boundaryOpts, label: 'wallRight' });
@@ -47,56 +53,84 @@ export default function AnimationPhysics() {
 
     Composite.add(engine.world, [ground, wallLeft, wallRight, roof]);
 
-    // Helper to create an authentic pickleball
+    // Authentic Pickleball Body Creator
     const BALL_RADIUS = 26;
     const createBall = (x: number, y: number) => {
       const ball = Bodies.circle(x, y, BALL_RADIUS, {
-        restitution: 0.9, // Ultra-bouncy pickleball
-        friction: 0.015,
-        frictionAir: 0.005,
+        restitution: 0.92, // Ultra-bouncy pickleball
+        friction: 0.01,
+        frictionAir: 0.006,
         density: 0.002,
         label: 'pickleball',
-        render: {
-          visible: false // We will custom draw authentic pickleballs with holes
-        }
+        render: { visible: false } // We custom-draw the pickleball with realistic holes
       });
-      // Store random hole rotation angle for realistic 3D appearance
       (ball as any).rotationOffset = Math.random() * Math.PI * 2;
       return ball;
     };
 
-    // Spawn initial set of balls across top area
+    // Spawn initial set of balls spread across width
     const initialBalls = [];
-    const ballCount = 14;
     for (let i = 0; i < ballCount; i++) {
-      const x = (width * 0.15) + Math.random() * (width * 0.7);
-      const y = 50 + Math.random() * (height * 0.4);
+      const x = (width * 0.08) + Math.random() * (width * 0.84);
+      const y = 30 + Math.random() * (height * 0.5);
       initialBalls.push(createBall(x, y));
     }
     Composite.add(engine.world, initialBalls);
 
-    // Mouse control for dragging balls
-    const mouse = Mouse.create(canvas);
-    const mouseConstraint = MouseConstraint.create(engine, {
-      mouse: mouse,
-      constraint: {
-        stiffness: 0.35,
-        damping: 0.1,
-        render: { visible: false }
-      }
-    });
-    Composite.add(engine.world, mouseConstraint);
-    render.mouse = mouse;
+    // Track mouse position over container for HOVER scattering
+    let mousePos = { x: -9999, y: -9999 };
+    let isMouseInside = false;
 
-    // Safety: ensure dragging constraint releases if mouse leaves or button is up
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
+        mousePos = { x, y };
+        isMouseInside = true;
+      } else {
+        isMouseInside = false;
+        mousePos = { x: -9999, y: -9999 };
+      }
+    };
+
+    const handleMouseLeave = () => {
+      isMouseInside = false;
+      mousePos = { x: -9999, y: -9999 };
+    };
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    document.addEventListener('mouseleave', handleMouseLeave);
+
+    // On every physics update: apply hover repulsion when cursor is near any ball
+    const HOVER_RADIUS = 95;
     Events.on(engine, 'beforeUpdate', () => {
-      if (mouseConstraint.body && mouse.button === -1) {
-        mouseConstraint.constraint.bodyB = null;
-        (mouseConstraint as any).body = null;
+      if (!isMouseInside) return;
+
+      const bodies = Composite.allBodies(engine.world);
+      for (let i = 0; i < bodies.length; i++) {
+        const body = bodies[i];
+        if (body.label !== 'pickleball') continue;
+
+        const dx = body.position.x - mousePos.x;
+        const dy = body.position.y - mousePos.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < HOVER_RADIUS && dist > 2) {
+          // Calculate repulsive force away from mouse cursor
+          const forceMagnitude = (1 - dist / HOVER_RADIUS) * 0.045;
+          const forceX = (dx / dist) * forceMagnitude;
+          // Pop ball upward and outward
+          const forceY = (dy / dist) * forceMagnitude - 0.02;
+
+          Matter.Body.applyForce(body, body.position, { x: forceX, y: forceY });
+          Matter.Body.setAngularVelocity(body, body.angularVelocity + (Math.random() - 0.5) * 0.18);
+        }
       }
     });
 
-    // Custom Drawing: Render Authentic Perforated Pickleballs
+    // Custom Drawing: Render Authentic Glowing Pickleballs with Perforated Holes
     Events.on(render, 'afterRender', () => {
       const ctx = render.context;
       if (!ctx) return;
@@ -114,15 +148,15 @@ export default function AnimationPhysics() {
         ctx.translate(x, y);
         ctx.rotate(angle);
 
-        // 1. Ball Glow & Body
-        ctx.shadowColor = 'rgba(223, 255, 0, 0.4)';
-        ctx.shadowBlur = 12;
+        // 1. Ball Glow & Sphere Gradient
+        ctx.shadowColor = 'rgba(223, 255, 0, 0.45)';
+        ctx.shadowBlur = 14;
 
-        const gradient = ctx.createRadialGradient(-6, -6, 2, 0, 0, BALL_RADIUS);
-        gradient.addColorStop(0, '#ffffff'); // bright highlight
-        gradient.addColorStop(0.25, '#e2f952'); // electric volt
+        const gradient = ctx.createRadialGradient(-7, -7, 2, 0, 0, BALL_RADIUS);
+        gradient.addColorStop(0, '#ffffff'); // bright sheen
+        gradient.addColorStop(0.25, '#f4ff52'); // volt glow
         gradient.addColorStop(0.85, '#d4f200'); // optic chartreuse
-        gradient.addColorStop(1, '#6E9400'); // deep optic volt edge for 3D sphere illusion
+        gradient.addColorStop(1, '#668a00'); // deep 3D contour edge
 
         ctx.fillStyle = gradient;
         ctx.beginPath();
@@ -131,29 +165,28 @@ export default function AnimationPhysics() {
 
         // 2. Subtle Outer Rim
         ctx.shadowBlur = 0;
-        ctx.lineWidth = 1.5;
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
+        ctx.lineWidth = 1.4;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.65)';
         ctx.stroke();
 
-        // 3. Authentic Pickleball Holes (perforations)
+        // 3. Authentic Pickleball Perforations (Holes)
         const holePositions = [
-          { x: 0, y: 0, r: 3.5 },
-          { x: -12, y: -10, r: 3 },
-          { x: 12, y: -10, r: 3 },
-          { x: -14, y: 8, r: 3 },
-          { x: 14, y: 8, r: 3 },
-          { x: 0, y: -16, r: 3.2 },
-          { x: 0, y: 16, r: 3.2 },
+          { x: 0, y: 0, r: 3.6 },
+          { x: -12, y: -10, r: 3.2 },
+          { x: 12, y: -10, r: 3.2 },
+          { x: -14, y: 8, r: 3.2 },
+          { x: 14, y: 8, r: 3.2 },
+          { x: 0, y: -16, r: 3.3 },
+          { x: 0, y: 16, r: 3.3 },
         ];
 
-        ctx.fillStyle = 'rgba(20, 30, 10, 0.85)'; // dark perforation color
+        ctx.fillStyle = 'rgba(20, 32, 8, 0.88)';
         for (const h of holePositions) {
           ctx.beginPath();
           ctx.arc(h.x, h.y, h.r, 0, Math.PI * 2);
           ctx.fill();
 
-          // Inner shadow/depth for hole
-          ctx.strokeStyle = 'rgba(10, 20, 5, 0.5)';
+          ctx.strokeStyle = 'rgba(8, 16, 4, 0.6)';
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -162,7 +195,7 @@ export default function AnimationPhysics() {
       }
     });
 
-    // ResizeObserver to keep walls and canvas perfectly sized to container
+    // ResizeObserver to keep canvas and boundary walls in sync with container
     const resizeObserver = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const { width: newWidth, height: newHeight } = entry.contentRect;
@@ -186,50 +219,14 @@ export default function AnimationPhysics() {
     });
     resizeObserver.observe(container);
 
-    // Spawn ball on user click if clicked away from active dragging
-    let isDragging = false;
-    Events.on(mouseConstraint, 'startdrag', () => { isDragging = true; });
-    Events.on(mouseConstraint, 'enddrag', () => { setTimeout(() => { isDragging = false; }, 100); });
-
-    // Window-level tracking to prevent balls from ever freezing or getting stuck during drags
-    const handleWindowMouseMove = (e: MouseEvent) => {
-      if (mouseConstraint.body) {
-        const rect = canvas.getBoundingClientRect();
-        mouse.position.x = e.clientX - rect.left;
-        mouse.position.y = e.clientY - rect.top;
-      }
-    };
-
-    const handleWindowMouseUp = () => {
-      if (mouseConstraint.body) {
-        mouseConstraint.constraint.bodyB = null;
-        (mouseConstraint as any).body = null;
-      }
-      isDragging = false;
-    };
-
-    window.addEventListener('mousemove', handleWindowMouseMove);
-    window.addEventListener('mouseup', handleWindowMouseUp);
-
-    const handleCanvasClick = (e: MouseEvent) => {
-      if (isDragging) return;
-      const rect = canvas.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const clickY = e.clientY - rect.top;
-      // Spawn new bouncy ball
-      Composite.add(engine.world, createBall(clickX, clickY));
-    };
-    canvas.addEventListener('click', handleCanvasClick);
-
-    // Run engine and renderer
+    // Run engine & renderer
     Render.run(render);
     const runner = Runner.create();
     Runner.run(runner, engine);
 
     return () => {
-      window.removeEventListener('mousemove', handleWindowMouseMove);
-      window.removeEventListener('mouseup', handleWindowMouseUp);
-      canvas.removeEventListener('click', handleCanvasClick);
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseleave', handleMouseLeave);
       resizeObserver.disconnect();
       Render.stop(render);
       Runner.stop(runner);
@@ -239,7 +236,7 @@ export default function AnimationPhysics() {
       Composite.clear(engine.world, false);
       Engine.clear(engine);
     };
-  }, []);
+  }, [ballCount]);
 
   return (
     <div
@@ -250,8 +247,10 @@ export default function AnimationPhysics() {
         width: '100%',
         height: '100%',
         overflow: 'hidden',
-        pointerEvents: 'none' // The canvas inside will have pointer-events: auto
+        pointerEvents: 'none', // Allows full pass-through for links and inputs
+        zIndex: 1,
       }}
+      aria-hidden="true"
     />
   );
 }

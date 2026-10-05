@@ -54,30 +54,30 @@ export default function RefundsPage() {
               Quick Summary
             </h3>
             <p style={{ margin: 0, fontSize: '15px', lineHeight: 1.6, color: '#374151' }}>
-              <strong>Up to 1 Day Prior:</strong> 100% full refund available with zero hassle.<br />
-              <strong>On Clinic Day:</strong> Refunds are not accepted, but we will gladly adjust and transfer you to the next upcoming clinic session so your investment is never lost.
+              <strong>Prior to 24 Hours (1 Day):</strong> 100% full refund with zero questions asked.<br />
+              <strong>On Clinic Day or Upon Request:</strong> We will gladly adjust and transfer you to the next upcoming clinic session so your spot and investment are completely protected.
             </p>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', color: '#4B5563', lineHeight: 1.7, fontSize: '15px' }}>
             <section>
               <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#111813', marginBottom: '8px', fontFamily: 'var(--font-heading)' }}>
-                1. Cancellations Up to 1 Day Before the Clinic
+                1. Cancellations Up to 1 Day (24 Hours) Before the Clinic
               </h2>
               <p>
-                We understand that schedules can change. If you need to cancel your attendance, you are eligible for a <strong>100% full refund</strong> provided your request is made at least <strong>1 day (24 hours)</strong> prior to the scheduled start time of the clinic.
+                We understand that schedules can change. If you need to cancel your attendance, you are eligible for a <strong>100% full refund with zero questions asked</strong>, provided your request is made at least <strong>24 hours (1 day)</strong> prior to the scheduled start time of the clinic.
               </p>
             </section>
 
             <section>
               <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#111813', marginBottom: '8px', fontFamily: 'var(--font-heading)' }}>
-                2. Same-Day Cancellations &amp; Adjustments
+                2. Same-Day Adjustments &amp; Transfers
               </h2>
               <p>
-                Because our clinics are strictly capped at <strong>8 players maximum across 2 courts (an 8:1 coaching ratio)</strong>, last-minute cancellations directly impact court reservations and class structure. Therefore, <strong>refunds are not accepted on the day of the clinic</strong>.
+                Because our clinics maintain an intimate small group of <strong>8 players across 2 courts (an 8:1 coaching ratio)</strong>, last-minute cancellations directly impact court reservations and drill pairings.
               </p>
               <p>
-                However, if you cannot make it on the day of the clinic, you will not lose your registration! We will gladly <strong>adjust and transfer you to the next upcoming clinic date</strong> so you can still participate and improve your game with Coach Cris.
+                If you cannot make it on the day of the clinic, you will never lose your registration! We will gladly <strong>adjust and transfer you to the next upcoming clinic date</strong> so you can participate and improve your game with Coach Cris.
               </p>
             </section>
 

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './SkillLevelCards.module.css';
+import { HelpCircle, Phone, CheckCircle2 } from 'lucide-react';
 
 const levels = [
   {
@@ -13,7 +14,7 @@ const levels = [
       'Ideal for players who know the basics — no official rating required',
       'Welcoming, patient, and ego-free coaching environment',
       'Master kitchen control, soft-touch dinking, and clean contact',
-      'Strict 8:1 player-to-coach ratio across 2 courts (4 per court)',
+      'Focused 8:1 player-to-coach ratio across 2 courts (4 per court)',
       'Real-time live corrections and personal take-home notes',
     ],
     cta: 'Reserve Your Spot (8 Max) →',
@@ -66,8 +67,8 @@ export default function SkillLevelCards() {
           justifyContent: 'space-between'
         }}>
           <div>
-            <strong style={{ display: 'block', fontSize: '15px', color: '#111813', marginBottom: '4px' }}>
-              💡 Not sure if your level fits?
+            <strong style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '15px', color: '#111813', marginBottom: '4px' }}>
+              <HelpCircle size={17} style={{ color: '#10B981', flexShrink: 0 }} /> Not sure if your level fits?
             </strong>
             <span style={{ fontSize: '14px', color: '#4B5563' }}>
               If you know how to serve, keep score, and sustain a short rally, you will feel completely at home. No official rating or tournament experience needed.
@@ -84,10 +85,13 @@ export default function SkillLevelCards() {
               background: '#FFFFFF',
               border: '1px solid #D1D5DB',
               borderRadius: '9999px',
-              whiteSpace: 'nowrap'
+              whiteSpace: 'nowrap',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
             }}
           >
-            Ask Coach Cris: +1 (587) 500-2973
+            <Phone size={14} /> Ask Coach Cris: +1 (587) 500-2973
           </a>
         </div>
 
@@ -126,7 +130,10 @@ export default function SkillLevelCards() {
               <ul className={styles.benefits}>
                 {level.benefits.map((b, j) => (
                   <li key={j} className={styles.benefit}>
-                    <span className={styles.check}>✓</span> {b}
+                    <span className={styles.check}>
+                      <CheckCircle2 size={15} style={{ color: level.dark ? 'var(--clr-volt)' : '#10B981', flexShrink: 0 }} />
+                    </span>
+                    {b}
                   </li>
                 ))}
               </ul>

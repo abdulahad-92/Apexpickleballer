@@ -29,11 +29,11 @@ export default async function HomePage() {
       <MarqueeTicker />
       <SkillLevelCards />
       <UpcomingCamps camps={camps} />
+      <ScheduleAccordion />
       <WhyCampsWork />
       <BlueprintSteps />
       <AboutSection />
       <PhotoGallery />
-      <ScheduleAccordion />
       <VideoTestimonials />
       <CtaBanner />
     </>

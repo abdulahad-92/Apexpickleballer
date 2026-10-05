@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './PhotoGallery.module.css';
 import AnimationParallax from '@/components/animations/AnimationParallax';
-import CustomCursor from '@/components/animations/CustomCursor';
 
 const photos = [
   { src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop', alt: 'Coaching session on court' },
@@ -20,14 +19,12 @@ interface PhotoGalleryProps {
   transparentBg?: boolean;
   animatedTitleBalls?: boolean;
   enableParallax?: boolean;
-  enableCursor?: boolean;
 }
 
 export default function PhotoGallery({
   transparentBg = false,
   animatedTitleBalls = true,
   enableParallax = true,
-  enableCursor = true,
 }: PhotoGalleryProps) {
   const containerRef = useRef<HTMLElement>(null);
 
@@ -41,7 +38,6 @@ export default function PhotoGallery({
           <AnimationParallax />
         </div>
       )}
-      {enableCursor && <CustomCursor containerRef={containerRef} />}
       <div className={styles.contentOverlay}>
         <div className="container">
         <div className={styles.header} data-reveal>

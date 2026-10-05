@@ -29,7 +29,7 @@ export default async function UpcomingCampsPage() {
         <div className="container">
           <h1 className="text-white">Upcoming Camp Schedule</h1>
           <p className={styles.heroSub}>
-            Plan your next pickleball getaway. All camps are strictly limited to 8 players.
+            Plan your next pickleball getaway. All clinics maintain an intimate small group of 8 players for maximum personalized coaching.
           </p>
         </div>
       </section>
