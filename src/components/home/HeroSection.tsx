@@ -7,6 +7,7 @@ import { Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 import styles from './HeroSection.module.css';
 import siteContent from '@/content/site.content.json';
 import VideoModalPlayer from '@/components/common/VideoModalPlayer';
+import HeroLightAnimation from './HeroLightAnimation';
 
 const { hero } = siteContent.home;
 const { brand } = siteContent;
@@ -20,10 +21,12 @@ interface HeroSectionProps {
 export default function HeroSection({
   transparentBg = false,
   paddleCourtSlot,
+  enableLightAnimation = true,
 }: HeroSectionProps) {
   return (
     <section className={`${styles.hero} ${transparentBg ? styles.transparent : ''}`}>
       <div className={styles.bg} aria-hidden="true" />
+      {enableLightAnimation && <HeroLightAnimation />}
       <div className={`container ${styles.inner}`}>
         <motion.div 
           initial={{ opacity: 0, y: 16 }}

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 import siteContent from '@/content/site.content.json';
 import PaddleLogo from '@/components/common/PaddleLogo';
-import AnimationPhysics from '@/components/animations/AnimationPhysics';
+import FooterLightAnimation from './FooterLightAnimation';
 
 const { footer, brand } = siteContent;
 
@@ -16,7 +16,7 @@ export default function Footer() {
   };
   return (
     <footer className={styles.footer}>
-      <AnimationPhysics ballCount={14} />
+      <FooterLightAnimation />
       <div className={`container ${styles.grid}`}>
         {/* Brand */}
         <div className={styles.brand}>
