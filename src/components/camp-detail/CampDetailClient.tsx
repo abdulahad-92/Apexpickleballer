@@ -62,7 +62,6 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
   
   const [ctaVisible, setCtaVisible] = useState(true); // immediate access for clean UX
   const [tickets, setTickets] = useState(1);
-  const vslRef = useRef<HTMLIFrameElement>(null);
   
   const status = statusConfig[camp.status] || statusConfig.available;
   const isSoldOut = camp.status === 'sold-out' || camp.seatsLeft <= 0;
@@ -186,29 +185,79 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
             </div>
           </div>
           
-          {/* Prominent Video with Captions */}
+          {/* Authentic On-Court Visual Showcase */}
           <div className={styles.vslContainer}>
-            <div className={styles.videoWrapper}>
-              <iframe
-                ref={vslRef}
-                src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1"
-                title="Coach Cris Clinic Demonstration"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <p style={{ textAlign: 'center', fontSize: '13px', color: 'rgba(255,255,255,0.7)', marginTop: '10px' }}>
-              🎥 Watch Coach Cris demonstrate the first 3 shots, live on-court corrections, and resets. (Captions available)
-            </p>
-            <div className={`${styles.vslCtaWrap} ${styles.vslCtaVisible}`} style={{ marginTop: '16px' }}>
-              <button
-                className={`btn btn--primary btn--lg ${isSoldOut ? 'btn--disabled' : ''}`}
-                onClick={() => !isSoldOut && setModalOpen(true)}
-                disabled={isSoldOut}
-              >
-                {isSoldOut ? 'Clinic Full (8/8 Spots Filled)' : `Reserve Your Spot For $${priceDisplay} →`}
-              </button>
+            <div style={{
+              position: 'relative',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              border: '1px solid rgba(255,255,255,0.15)',
+              boxShadow: '0 16px 40px rgba(0,0,0,0.4)',
+              background: '#0D140F'
+            }}>
+              <div style={{ position: 'relative', width: '100%', minHeight: '360px', height: 'auto' }}>
+                <div style={{ position: 'relative', width: '100%', height: '360px' }}>
+                  <Image
+                    src="/images/apex1.png"
+                    alt="Coach Cris on-court live clinic instruction across 2 dedicated courts"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                    unoptimized
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: 'linear-gradient(to top, rgba(13,20,15,0.95) 0%, rgba(13,20,15,0.45) 50%, rgba(13,20,15,0.15) 100%)',
+                  }} />
+                  
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '24px',
+                    left: '24px',
+                    right: '24px',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    alignItems: 'flex-end',
+                    justifyContent: 'space-between',
+                    gap: '16px'
+                  }}>
+                    <div style={{ maxWidth: '480px' }}>
+                      <div style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        background: 'var(--clr-volt)',
+                        color: '#111813',
+                        fontSize: '11px',
+                        fontWeight: 800,
+                        padding: '4px 10px',
+                        borderRadius: '4px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.8px',
+                        marginBottom: '8px'
+                      }}>
+                        <ShieldCheck size={13} /> Dedicated 2-Court Toronto Facility
+                      </div>
+                      <h3 style={{ fontSize: '22px', fontWeight: 900, color: '#FFFFFF', margin: 0, fontFamily: 'var(--font-heading)' }}>
+                        8 Players. 2 Courts. 1 Master Coach.
+                      </h3>
+                      <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.85)', margin: '6px 0 0', lineHeight: 1.5 }}>
+                        Coach Cris observes both courts continuously, diagnosing bad habits and providing active corrections on every single drill.
+                      </p>
+                    </div>
+
+                    <button
+                      className={`btn btn--primary btn--lg ${isSoldOut ? 'btn--disabled' : ''}`}
+                      onClick={() => !isSoldOut && setModalOpen(true)}
+                      disabled={isSoldOut}
+                      style={{ whiteSpace: 'nowrap' }}
+                    >
+                      {isSoldOut ? 'Clinic Full (8/8 Spots Filled)' : `Reserve Your Spot For $${priceDisplay} →`}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -336,7 +385,7 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
               <div className={styles.coachCard}>
                 <div className={styles.coachPhotoWrap}>
                   <Image 
-                    src={coach?.photo || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop'} 
+                    src={coach?.photo || '/images/coach-cris.jpeg'} 
                     alt="Coach Cris Abegão" 
                     width={140} 
                     height={140} 

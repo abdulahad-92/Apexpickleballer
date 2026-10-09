@@ -125,9 +125,6 @@
       "subheadline": "Our first Toronto clinic is a 4-hour coached immersion for adult players: 8 players, 2 courts, and 1 coach. Turn your enthusiasm into lasting consistency with structured drills and on-the-spot personalized feedback.",
       "ctaLabel": "Reserve Your Spot →",
       "ctaHref": "/camps/toronto-beginner-clinic",
-      "videoYouTubeId": "kJQP7kiw5Fk",
-      "videoTitle": "Watch Coach Cris demonstrate technical correction and the first 3 shots",
-      "videoCaption": "Coached by Cristóvão 'Cris' Abegão — Professional Pickleball Coach in Canada",
       "stats": [
         { "count": 8, "suffix": ":1", "label": "Player-to-Coach Ratio" },
         { "count": 4, "suffix": " Hours", "label": "Coached Immersion" },
@@ -261,28 +258,28 @@
       "subheading": "Authentic moments of adult recreational players learning, connecting, and celebrating progress together.",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&h=600&fit=crop",
-          "alt": "Adult pickleball players drilling on court with coach"
+          "src": "/images/apex3.png",
+          "alt": "Coach Cris actively coaching across 2 dedicated indoor courts with 8 players"
         },
         {
-          "src": "https://images.unsplash.com/photo-1641479430-e9e66dd8ba6c?w=800&h=600&fit=crop",
-          "alt": "Coach demonstrating dink mechanics and soft hands"
+          "src": "/images/apex2.png",
+          "alt": "1-on-1 paddle angle and wrist positioning adjustment at the kitchen net"
         },
         {
-          "src": "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=800&h=600&fit=crop",
-          "alt": "Doubles players practicing third-shot drops and kitchen transition"
+          "src": "/images/apex1.png",
+          "alt": "Live kitchen line dinking and reset rally breakdown"
         },
         {
-          "src": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=600&fit=crop",
-          "alt": "Campers celebrating a great point together"
+          "src": "/images/apex6.png",
+          "alt": "Supportive group clinic debrief with Coach Cris"
         },
         {
-          "src": "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&h=600&fit=crop",
-          "alt": "Community of pickleball players gathered at court side"
+          "src": "/images/apex10.png",
+          "alt": "Adult players learning doubles positioning and communication"
         },
         {
-          "src": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800&h=600&fit=crop",
-          "alt": "Indoor pickleball clinic practice session with coach feedback"
+          "src": "/images/apex13.png",
+          "alt": "Post-session patio debrief with personalized coaching takeaways"
         }
       ]
     },

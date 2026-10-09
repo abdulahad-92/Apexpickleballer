@@ -94,9 +94,9 @@ export default function WomenOnlyPage() {
       <section className={styles.testimonialStrip}>
         <div className={`container ${styles.testimonials}`}>
           {[
-            { quote: '"I was nervous it would be competitive and intimidating. It was the exact opposite — welcoming, fun, and I learned so much."', name: 'Patricia L.', location: 'Fort Myers, FL' },
-            { quote: '"Finally, a camp where I could ask dumb questions without feeling judged. Coach Linda was incredible."', name: 'Wendy C.', location: 'Carlsbad, CA' },
-            { quote: '"My game jumped a full rating level in one camp. I\'ve been to mixed camps before and never improved this fast."', name: 'Susan M.', location: 'Raleigh, NC' },
+            { quote: '"I was nervous it would be competitive and intimidating. It was the exact opposite — welcoming, fun, and I learned so much about soft-touch dinking and reset positioning."', name: 'Patricia L.', location: 'Toronto, ON' },
+            { quote: '"Finally, a clinic where I could ask questions freely without feeling rushed. Having 2 dedicated courts with 4 players per court made every drill so focused."', name: 'Wendy C.', location: 'Mississauga, ON' },
+            { quote: '"My game jumped a full rating level in one clinic. Coach gave us clear personal notes to take home that I still use every week."', name: 'Susan M.', location: 'Oakville, ON' },
           ].map((t) => (
             <div key={t.name} className={styles.testimonialCard}>
               <p className={styles.testimonialQuote}>{t.quote}</p>

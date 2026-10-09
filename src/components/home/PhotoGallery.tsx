@@ -7,12 +7,12 @@ import styles from './PhotoGallery.module.css';
 import AnimationParallax from '@/components/animations/AnimationParallax';
 
 const photos = [
-  { src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop', alt: 'Coaching session on court' },
-  { src: 'https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=600&auto=format&fit=crop', alt: 'Players training outdoors' },
-  { src: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&auto=format&fit=crop', alt: 'Group drill practice' },
-  { src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop', alt: 'Team camp moment' },
-  { src: 'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=600&auto=format&fit=crop', alt: 'Players celebrating progress' },
-  { src: 'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&auto=format&fit=crop', alt: 'Sport action shot' },
+  { src: '/images/apex3.png', alt: 'Coach Cris actively coaching across 2 dedicated indoor courts with 8 players (8:1 ratio)' },
+  { src: '/images/apex2.png', alt: '1-on-1 paddle angle and wrist positioning adjustment at the kitchen net' },
+  { src: '/images/apex1.png', alt: 'Live kitchen line dinking and reset rally breakdown' },
+  { src: '/images/apex6.png', alt: 'Supportive, high-energy group clinic debrief with Coach Cris' },
+  { src: '/images/apex10.png', alt: 'Adult players learning doubles positioning and communication' },
+  { src: '/images/apex13.png', alt: 'Post-session patio debrief with personalized coaching takeaways' },
 ];
 
 interface PhotoGalleryProps {

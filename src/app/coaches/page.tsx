@@ -13,8 +13,7 @@ import {
   Sparkles, 
   Users, 
   ArrowRight,
-  ShieldCheck,
-  Video
+  ShieldCheck
 } from 'lucide-react';
 
 export const metadata: Metadata = {

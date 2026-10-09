@@ -13,8 +13,8 @@ const statusConfig = {
 
 const coaches: Record<string, { name: string; photo: string }> = {
   'coach-cris':  { name: "Coach Cris Abegão", photo: '/images/coach-cris.jpeg' },
-  'coach-sarah': { name: 'Coach Sarah R.', photo: 'https://i.pravatar.cc/48?img=25' },
-  'coach-james': { name: 'Coach James T.', photo: 'https://i.pravatar.cc/48?img=67' },
+  'coach-sarah': { name: 'Coach Sarah R.', photo: '/images/apex2.png' },
+  'coach-james': { name: 'Coach James T.', photo: '/images/apex5.png' },
 };
 
 const months = [

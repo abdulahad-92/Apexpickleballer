@@ -24,59 +24,55 @@
       "Doubles Rating 4.5–5.0"
     ],
     "phone": "+1 (587) 500-2973",
-    "youtubeId": "kJQP7kiw5Fk",
     "featured": true
   },
   {
     "id": "coach-sarah-reynolds",
     "slug": "sarah-reynolds",
     "name": "Sarah Reynolds",
-    "photo": "https://i.pravatar.cc/400?img=25",
+    "photo": "/images/apex2.png",
     "gender": "female",
     "badges": ["Certified Coach", "Former Competitor", "5★ Rated Coach"],
     "bio": "With a background in competitive tournament play, Sarah breaks down the mental game and positioning strategies that separate intermediate from advanced players. She specializes in doubles strategy and supportive player development.",
     "shortBio": "Specializes in doubles strategy, court positioning, and building confidence under game pressure.",
     "experience": 7,
-    "states": ["Ontario", "Texas"],
+    "states": ["Ontario", "Toronto"],
     "rating": 4.9,
     "campsRun": 156,
     "specialties": ["Doubles Strategy", "Mental Toughness", "Competitive Play"],
-    "certifications": ["PPR Certified", "IPTPA Level 1"],
-    "youtubeId": "Ks-_Mh1QhMc"
+    "certifications": ["PPR Certified", "IPTPA Level 1"]
   },
   {
     "id": "coach-james-torres",
     "slug": "james-torres",
     "name": "James Torres",
-    "photo": "https://i.pravatar.cc/400?img=67",
+    "photo": "/images/apex5.png",
     "gender": "male",
     "badges": ["Biomechanics Specialist", "Senior Focus (40+)", "8 Years Coaching"],
     "bio": "James specializes in joint-friendly movement, footwork, and injury prevention. His clinics have helped hundreds of players 40+ continue playing pain-free with effortless shot mechanics.",
     "shortBio": "Movement specialist focusing on efficient footwork and injury-free mechanics for 40+ players.",
     "experience": 8,
-    "states": ["Ontario", "Colorado"],
+    "states": ["Ontario", "Toronto"],
     "rating": 4.9,
     "campsRun": 178,
     "specialties": ["Footwork", "Injury Prevention", "Senior Players"],
-    "certifications": ["Certified Fitness Specialist"],
-    "youtubeId": "dVF5fqgAa4E"
+    "certifications": ["Certified Fitness Specialist"]
   },
   {
     "id": "coach-linda-chen",
     "slug": "linda-chen",
     "name": "Linda Chen",
-    "photo": "https://i.pravatar.cc/400?img=5",
+    "photo": "/images/apex4.png",
     "gender": "female",
     "badges": ["Women's Specialist", "Former Tennis Pro", "Patience & Detail"],
     "bio": "Linda transitioned from competitive racket sports into pickleball coaching. She leads women's clinics with a teaching style that is patient, detailed, and results-oriented.",
     "shortBio": "Patient, detailed, and encouraging coach specializing in women's clinics and kitchen play.",
     "experience": 5,
-    "states": ["Ontario", "California"],
+    "states": ["Ontario", "Toronto"],
     "rating": 4.9,
     "campsRun": 112,
     "specialties": ["Women's Coaching", "Dinking Mastery", "Net Game"],
     "certifications": ["PTR Certified Coach"],
-    "youtubeId": "tgbNymZ7vqY",
     "womenOnly": true
   }
 ]

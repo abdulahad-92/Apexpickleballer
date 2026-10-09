@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 import styles from './HeroSection.module.css';
 import siteContent from '@/content/site.content.json';
-import VideoModalPlayer from '@/components/common/VideoModalPlayer';
 import HeroLightAnimation from './HeroLightAnimation';
 
 const { hero } = siteContent.home;
@@ -102,20 +101,6 @@ export default function HeroSection({
               </div>
             </React.Fragment>
           ))}
-        </motion.div>
-
-        {/* Guaranteed Video Embed with Poster & Play Button */}
-        <motion.div 
-          className={styles.videoWrap}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <VideoModalPlayer
-            youtubeId={hero.videoYouTubeId}
-            title={hero.videoTitle}
-            caption={hero.videoCaption}
-          />
         </motion.div>
       </div>
     </section>

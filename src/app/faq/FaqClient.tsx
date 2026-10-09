@@ -60,8 +60,8 @@ export default function FaqClient({ faqData, cta }: Props) {
             </p>
             <div className={styles.imageWrap}>
               <Image 
-                src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800&h=600&fit=crop" 
-                alt="Pickleball players" 
+                src="/images/apex13.png" 
+                alt="Apex Pickleballers players and coach in debrief" 
                 width={800} 
                 height={600} 
                 unoptimized

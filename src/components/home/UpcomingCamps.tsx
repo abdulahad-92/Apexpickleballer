@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Camp } from '@/types';
+import { Calendar, Clock, MapPin, CheckCircle2, ShieldCheck, Users } from 'lucide-react';
 import styles from './UpcomingCamps.module.css';
 
 const statusConfig = {
-  available:  { label: '✓ Available',   cls: 'badge--available' },
-  limited:    { label: '⚠ Limited (8 Max)', cls: 'badge--limited' },
-  'sold-out': { label: '✗ Clinic Full',    cls: 'badge--sold-out' },
+  available:  { label: '✓ Spots Available', cls: 'badge--available' },
+  limited:    { label: '⚠ Limited (8 Max)',  cls: 'badge--limited' },
+  'sold-out': { label: '✗ Clinic Full',      cls: 'badge--sold-out' },
 };
 
-const coaches: Record<string, { name: string; photo: string }> = {
-  'coach-cris':  { name: "Coach Cris Abegão", photo: '/images/coach-cris.jpeg' },
-  'coach-sarah': { name: 'Coach Sarah R.', photo: 'https://i.pravatar.cc/48?img=25' },
-  'coach-james': { name: 'Coach James T.', photo: 'https://i.pravatar.cc/48?img=67' },
+const coaches: Record<string, { name: string; role: string; photo: string }> = {
+  'coach-cris':  { name: "Coach Cris Abegão", role: '4.5–5.0 Doubles Specialist', photo: '/images/coach-cris.jpeg' },
+  'coach-sarah': { name: 'Coach Sarah R.', role: 'Doubles Strategy Coach', photo: '/images/apex2.png' },
+  'coach-james': { name: 'Coach James T.', role: 'Movement & Biomechanics', photo: '/images/apex5.png' },
 };
 
 export default function UpcomingCamps({ camps }: { camps: Camp[] }) {
@@ -25,7 +26,7 @@ export default function UpcomingCamps({ camps }: { camps: Camp[] }) {
           <span className="section-label section-label--dark">Coached Clinics</span>
           <h2>Flagship Toronto Coached Sessions</h2>
           <p className={styles.subtitle}>
-            Focused small group of 8 players across 2 courts (4 per court) with Coach Cris. Reserve your spot before it fills.
+            Small group capped at 8 players across 2 dedicated indoor courts with Coach Cris. Zero standing in lines. 100% active court reps.
           </p>
         </div>
 
@@ -42,23 +43,61 @@ export default function UpcomingCamps({ camps }: { camps: Camp[] }) {
                   <span className={`badge ${status.cls}`}>{status.label}</span>
                   <span className="badge badge--level">{camp.level}</span>
                 </div>
+
                 <div className={styles.cardBody}>
-                  <p className={styles.date}>{camp.dateDisplay}</p>
-                  <p className={styles.time}>{camp.time}</p>
-                  <h3 className={styles.location}>{camp.city}, {camp.stateCode} · Canada</h3>
+                  <div className={styles.dateRow}>
+                    <Calendar size={15} style={{ color: 'var(--clr-text-secondary)' }} />
+                    <span>{camp.dateDisplay}</span>
+                  </div>
+
+                  <div className={styles.timeRow}>
+                    <Clock size={14} style={{ color: 'var(--clr-text-muted)' }} />
+                    <span>{camp.time}</span>
+                  </div>
+
+                  <h3 className={styles.location}>
+                    <MapPin size={18} style={{ color: '#166534', flexShrink: 0 }} />
+                    {camp.city}, {camp.stateCode} · Canada
+                  </h3>
+
+                  <div className={styles.facilityBadge}>
+                    <ShieldCheck size={13} />
+                    <span>2 Dedicated Courts · 8 Players Max (8:1 Ratio)</span>
+                  </div>
+
+                  <div className={styles.featuresList}>
+                    <div className={styles.featureItem}>
+                      <CheckCircle2 size={13} style={{ color: '#10B981' }} />
+                      <span>The First 3 Shots &amp; Kitchen Resets</span>
+                    </div>
+                    <div className={styles.featureItem}>
+                      <CheckCircle2 size={13} style={{ color: '#10B981' }} />
+                      <span>Live Observant Real-Time Feedback</span>
+                    </div>
+                    <div className={styles.featureItem}>
+                      <CheckCircle2 size={13} style={{ color: '#10B981' }} />
+                      <span>Take-Home Personalized Coaching Plan</span>
+                    </div>
+                  </div>
+
                   {coach && (
                     <div className={styles.coachRow}>
                       <div className={styles.coachAvatar}>
-                        <Image src={coach.photo} alt={coach.name} width={36} height={36} unoptimized />
+                        <Image src={coach.photo} alt={coach.name} width={38} height={38} unoptimized />
                       </div>
-                      <span className={styles.coachName}>{coach.name}</span>
+                      <div className={styles.coachInfo}>
+                        <span className={styles.coachName}>{coach.name}</span>
+                        <span className={styles.coachRole}>{coach.role}</span>
+                      </div>
                     </div>
                   )}
-                  <p className={styles.price}>{priceLabel}</p>
-                  <p style={{ fontSize: '12px', color: '#6B7280', marginTop: '-8px', marginBottom: '8px' }}>
-                    4-Hour Clinic · 8:1 Ratio (2 Courts)
-                  </p>
+
+                  <div className={styles.priceBlock}>
+                    <div className={styles.price}>{priceLabel}</div>
+                    <div className={styles.priceSub}>All 4 hours + equipment + notes included</div>
+                  </div>
                 </div>
+
                 <div className={styles.cardFooter}>
                   <Link
                     href={`/camps/${camp.slug}`}
