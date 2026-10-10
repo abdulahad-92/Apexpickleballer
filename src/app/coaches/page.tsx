@@ -139,8 +139,8 @@ export default function CoachesPage() {
                   <a href={`tel:${leadCoach.phone || '+15875002973'}`} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#111813', textDecoration: 'none', fontWeight: 700 }}>
                     <Phone size={16} style={{ color: '#10B981' }} /> {leadCoach.phone || '+1 (587) 500-2973'}
                   </a>
-                  <a href="mailto:hello@apexpickleballers.com" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#4B5563', textDecoration: 'none' }}>
-                    <Mail size={16} style={{ color: '#6B7280' }} /> hello@apexpickleballers.com
+                  <a href={`mailto:${leadCoach.email || 'chris@apexpickleballer.com'}`} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#4B5563', textDecoration: 'none' }}>
+                    <Mail size={16} style={{ color: '#6B7280' }} /> {leadCoach.email || 'chris@apexpickleballer.com'}
                   </a>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#4B5563' }}>
                     <MapPin size={16} style={{ color: '#6B7280' }} /> Toronto &amp; GTA, ON

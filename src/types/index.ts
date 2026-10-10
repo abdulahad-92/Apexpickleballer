@@ -62,6 +62,7 @@ export interface Coach {
   youtubeId?: string;
   womenOnly?: boolean;
   phone?: string;
+  email?: string;
   featured?: boolean;
 }
 

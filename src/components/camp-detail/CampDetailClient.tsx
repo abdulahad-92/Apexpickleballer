@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './CampDetailClient.module.css';
 import siteContent from '@/content/site.content.json';
-import { ShieldCheck, Users, Clock, MapPin, CheckCircle2, Award, Phone, Calendar, Trophy, Sparkles } from 'lucide-react';
+import { ShieldCheck, Users, Clock, MapPin, CheckCircle2, Award, Phone, Mail, Calendar, Trophy, Sparkles } from 'lucide-react';
 
 const statusConfig = {
   available:  { label: '✓ Spots Available',   cls: 'badge--available' },
@@ -403,9 +403,15 @@ export default function CampDetailClient({ camp, coach }: { camp: Camp; coach: C
                   <p className={styles.coachBio}>
                     Born in Portugal and coaching in Canada for over 12 years, Cris is a Professional Pickleball Coach at some of the biggest and most private gyms in Canada. Mentored by CNPL Pro Christina Chin (&ldquo;Pickleball On Ice&rdquo;) and Alex Stojkov (co-creator of Canadian certification courses), Cris is exceptionally observant—noticing what players do in real time to provide instantaneous, actionable adjustments on the spot.
                   </p>
-                  <div style={{ marginTop: '12px', fontSize: '13px', color: '#4B5563', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <Phone size={15} />
-                    <span>Direct questions? Call Coach Cris at <strong>+1 (587) 500-2973</strong></span>
+                  <div style={{ marginTop: '14px', fontSize: '13px', color: '#4B5563', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <Phone size={15} style={{ color: 'var(--clr-volt)' }} />
+                      <span>Direct questions? Call Coach Cris at <a href="tel:+15875002973" style={{ color: '#111813', fontWeight: 700 }}>+1 (587) 500-2973</a></span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <Mail size={15} style={{ color: 'var(--clr-volt)' }} />
+                      <span>Email Coach Cris directly: <a href="mailto:chris@apexpickleballer.com" style={{ color: '#111813', fontWeight: 700 }}>chris@apexpickleballer.com</a></span>
+                    </div>
                   </div>
                 </div>
               </div>

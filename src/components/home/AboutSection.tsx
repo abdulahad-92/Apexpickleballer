@@ -5,7 +5,7 @@ import styles from './AboutSection.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import siteContent from '@/content/site.content.json';
-import { Phone, Award, Users, CheckCircle, ShieldCheck } from 'lucide-react';
+import { Phone, Mail, Award, Users, CheckCircle, ShieldCheck } from 'lucide-react';
 
 const { brand } = siteContent;
 
@@ -108,9 +108,15 @@ export default function AboutSection() {
             </p>
 
             <div className={styles.coachCardFooter}>
-              <div className={styles.phoneBox}>
-                <Phone size={16} className={styles.phoneIcon} />
-                <a href="tel:+15875002973" className={styles.phoneLink}>+1 (587) 500-2973</a>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', alignItems: 'center' }}>
+                <div className={styles.phoneBox}>
+                  <Phone size={15} className={styles.phoneIcon} />
+                  <a href="tel:+15875002973" className={styles.phoneLink}>+1 (587) 500-2973</a>
+                </div>
+                <div className={styles.phoneBox}>
+                  <Mail size={15} className={styles.phoneIcon} />
+                  <a href="mailto:chris@apexpickleballer.com" className={styles.phoneLink}>chris@apexpickleballer.com</a>
+                </div>
               </div>
               <Link href="/camps/toronto-beginner-clinic" className="btn btn--primary btn--full">
                 Reserve Your Spot with Coach Cris →
